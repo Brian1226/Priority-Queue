@@ -5,7 +5,7 @@
 
 # Use Case Description
 
-**Product Name:**
+**Product Name:** Priority Queue
 
 **Problem Statement:**
 
@@ -29,7 +29,7 @@ write summary here
 actor 1
 actor 2
 ….
- 
+
 
 ## Preconditions
 
@@ -52,7 +52,7 @@ Explain trigger here
 step 1 action
 step 2 action
 etc
- 
+
 
 ## Primary Postconditions
 
@@ -69,9 +69,7 @@ etc
 Only if you have alt seq
 
 * Step 1 alt. seq.
-
 * step 2 alt. seq.
-
 * etc
 
  
