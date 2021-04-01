@@ -9,7 +9,7 @@
 
 **Problem Statement:**
 
-blah blah blah
+So that people can complete important tasks on time, the to-do list app -Priority Queue - allows users to write down and complete their most urgent tasks without worrying about an unclear goal or not writing it down.
 
 
 **Use Case #1 Name:**
