@@ -12,9 +12,9 @@
 blah blah blah
 
 
-**Use Case #1 Name:**
+**Use Case #1 Name:** Create new task
 
-**Date:**
+**Date:** 4/1/2021
 
  
 
@@ -26,9 +26,7 @@ write summary here
 
 ## Actors
 
-actor 1
-actor 2
-….
+The user
 
 
 ## Preconditions
