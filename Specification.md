@@ -22,10 +22,11 @@
 Once the user opened the app, they can select the option "Create new task," which opens up a new empty note.
 
  
-
+ 
 ## Actors
 
 The user
+
 
 
 ## Preconditions
@@ -35,7 +36,7 @@ The user
  
 
 ## Triggers
-
+The user selects "Create new task" option
 
  
 
