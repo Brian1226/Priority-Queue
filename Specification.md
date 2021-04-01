@@ -48,11 +48,10 @@ The user selects "Create new task" option
 3. The app creates a new, empty note
 
 
+
 ## Primary Postconditions
 
 * The app creates an empty note
-**OR**
-* The app does not create an empty note
 
 
 
@@ -66,6 +65,7 @@ The user selects "Create new task" option
 
 ### Alternate Postconditions
 
+* The app does not create an empty note
  
 
 ## Non-functional Requirements
