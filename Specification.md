@@ -36,31 +36,29 @@ Once the user opened the app, they can select the option "Create new task," whic
  
 
 ## Triggers
+
 The user selects "Create new task" option
 
  
 
 ## Primary Sequence
 
-step 1 action
-step 2 action
-etc
+1. The app displays a message, asking the user to either confirm or cancel the action
+2. The user clicks "confirm"
+3. The app creates a new, empty note
 
 
 ## Primary Postconditions
 
 * The app creates an empty note
-  * The empty note occupies one more space
+**OR**
+* The app does not create an empty note
 
 
- 
+
 ## Alternate Sequences
 
-Only if you have alt seq
-
-* Step 1 alt. seq.
-* step 2 alt. seq.
-* etc
+2. If the user clicks "cancel", then the app will not create a new, empty note
 
  
 
