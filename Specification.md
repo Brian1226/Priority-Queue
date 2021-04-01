@@ -9,7 +9,6 @@
 
 **Problem Statement:**
 
-blah blah blah
 
 
 **Use Case #1 Name:** Create new task
@@ -20,7 +19,7 @@ blah blah blah
 
 ## Summary
 
-write summary here
+Once the user opened the app, they can select the option "Create new task," which opens up a new empty note.
 
  
 
@@ -31,17 +30,12 @@ The user
 
 ## Preconditions
 
-* precond 1
-
-* precond 2
-
-* ….
+* The user opened the app
 
  
 
 ## Triggers
 
-Explain trigger here
 
  
 
