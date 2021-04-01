@@ -78,4 +78,4 @@ Only if you have alt seq
  
 
 ## Glossary
-
+* user = a person who uses the app
