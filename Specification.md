@@ -25,7 +25,7 @@ Once the user opened the app, they can select the option "Create new task," whic
  
 ## Actors
 
-The user
+1. The user
 
 
 
@@ -49,14 +49,11 @@ etc
 
 ## Primary Postconditions
 
-* postcondition
+* The app creates an empty note
+  * The empty note occupies one more space
 
-* postcondition
-
-* etc
 
  
-
 ## Alternate Sequences
 
 Only if you have alt seq
