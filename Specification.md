@@ -136,3 +136,5 @@ write
 
 ## Glossary
 * user = a person who uses the app
+* note = a systematic checklist
+* task = each line of the note
