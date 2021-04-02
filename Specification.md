@@ -2,15 +2,15 @@
 
 **Team Members Name & Username:** Brian Nguyen (Brian1226), Christy Nguyen (cnguyenth), Karan Sharma (Kar-Sha)
 
-
-
-# Use Case Description
-
 **Product Name:** Priority Queue
 
 **Problem Statement:** The to-do app-Priority Queue allows for users to organize their tasks from greater importance to least importance in a systemic checklist. After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed.
 
 
+***
+
+
+# Use Case Description
 
 **Use Case #1 Name:** Create new note
 
