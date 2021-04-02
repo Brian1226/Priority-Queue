@@ -71,15 +71,15 @@ The user selects "Create new note" option
 
 ***
 
-**Use Case #2 Name:** 
+**Use Case #2 Name:** Delete note
 
-**Date:** 
+**Date:** 4/2/2021
 
  
 
 ## Summary
 
-write here
+To delete a note, the user can select the note they want to be deleted, then select the option "delete note" 
 
  
  
