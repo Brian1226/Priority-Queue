@@ -120,12 +120,65 @@ To delete a note, the user can select the note they want to be deleted, then sel
  
  
 ***
+
+
+**Use Case #3 Name:** 
+
+**Date:** 4/2/2021
+
+ 
+## Summary
+
+write 
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+* write
+
+ 
+## Primary Sequence
+
+1. write
+2. etc
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
  
  
 ## Non-functional Requirements
 
  
-
 ## Glossary
 * user = a person who uses the app
 * note = a systematic checklist
