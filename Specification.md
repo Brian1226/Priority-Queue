@@ -44,7 +44,7 @@ The user selects "Create new task" option
 ## Primary Sequence
 
 1. The app displays a message, asking the user to either confirm or cancel the action
-2. The user clicks "confirm"
+2. The user clicks on the "confirm" option
 3. The app creates a new, empty note
 
 
@@ -62,6 +62,8 @@ The user selects "Create new task" option
  
 
 ### Alternate Trigger
+
+* The user clicks on the "cancel" option
 
 ### Alternate Postconditions
 
