@@ -183,3 +183,4 @@ write
 * user = a person who uses the app
 * note = a systematic checklist
 * task = each line of the note
+* queue = the priority of each list, or the priority of each tasks within a list (the elements are in order from most important to least, from top to bottom)
