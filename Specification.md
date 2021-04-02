@@ -16,17 +16,14 @@
 **Date:** 4/1/2021
 
  
-
 ## Summary
 
 Once the user opened the app, they can select the option "Create new note," which opens up a new empty note.
 
  
- 
 ## Actors
 
 1. The user
-
 
 
 ## Preconditions
@@ -34,13 +31,11 @@ Once the user opened the app, they can select the option "Create new note," whic
 * The user opened the app
 
  
-
 ## Triggers
 
 The user selects "Create new note" option
 
  
-
 ## Primary Sequence
 
 1. The app displays a message, asking the user to either confirm or cancel the action
@@ -48,11 +43,9 @@ The user selects "Create new note" option
 3. The app creates a new, empty note
 
 
-
 ## Primary Postconditions
 
 * The app creates an empty note
-
 
 
 ## Alternate Sequences
@@ -60,33 +53,32 @@ The user selects "Create new note" option
 2. If the user clicks "cancel", then the app will not create a new, empty note
 
  
-
 ### Alternate Trigger
 
 * The user clicks on the "cancel" option
+
 
 ### Alternate Postconditions
 
 * The app does not create an empty note
 
+
 ***
+
 
 **Use Case #2 Name:** Delete note
 
 **Date:** 4/2/2021
 
  
-
 ## Summary
 
 To delete a note, the user can select the note they want to be deleted, then select the option "delete note" 
 
  
- 
 ## Actors
 
 1. The user
-
 
 
 ## Preconditions
@@ -94,13 +86,11 @@ To delete a note, the user can select the note they want to be deleted, then sel
 * A note has to exist first before a user can delete it
 
  
-
 ## Triggers
 
 * The user selects the note they want to delete, then select "delete note" option
 
  
-
 ## Primary Sequence
 
 1. The app displays a message, asking the user to either confirm or cancel the action
@@ -108,11 +98,9 @@ To delete a note, the user can select the note they want to be deleted, then sel
 3. The app deletes the selected note
 
 
-
 ## Primary Postconditions
 
 * The app deletes the note
-
 
 
 ## Alternate Sequences
@@ -120,16 +108,19 @@ To delete a note, the user can select the note they want to be deleted, then sel
 write
 
  
-
 ### Alternate Trigger
 
 * write
+
 
 ### Alternate Postconditions
 
 * write
  
-
+ 
+ ***
+ 
+ 
 ## Non-functional Requirements
 
  
