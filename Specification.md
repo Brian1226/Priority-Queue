@@ -69,7 +69,7 @@ The user selects "Create new task" option
 
 * The app does not create an empty note
 
-
+***
 
 **Use Case #2 Name:** 
 
