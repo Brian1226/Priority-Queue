@@ -11,7 +11,7 @@
 
 
 
-**Use Case #1 Name:** Create new task
+**Use Case #1 Name:** Create new note
 
 **Date:** 4/1/2021
 
@@ -19,7 +19,7 @@
 
 ## Summary
 
-Once the user opened the app, they can select the option "Create new task," which opens up a new empty note.
+Once the user opened the app, they can select the option "Create new note," which opens up a new empty note.
 
  
  
@@ -37,7 +37,7 @@ Once the user opened the app, they can select the option "Create new task," whic
 
 ## Triggers
 
-The user selects "Create new task" option
+The user selects "Create new note" option
 
  
 
