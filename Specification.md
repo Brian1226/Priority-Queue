@@ -103,15 +103,15 @@ To delete a note, the user can select the note they want to be deleted, then sel
 
 ## Primary Sequence
 
-1. write
-2. etc
-
+1. The app displays a message, asking the user to either confirm or cancel the action
+2. The user clicks on the "confirm" option
+3. The app deletes the selected note
 
 
 
 ## Primary Postconditions
 
-* write
+* The app deletes the note
 
 
 
