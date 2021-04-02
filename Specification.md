@@ -7,7 +7,7 @@
 
 **Product Name:** Priority Queue
 
-**Problem Statement:** In order for people to complete important tasks on time, the to-do list app-Priority Queue-allows users to write down and complete their most urgent tasks without worrying about an unclear goal or not writing it down
+**Problem Statement:** The to-do app-Priority Queue allows for users to organize their tasks from greater importance to least importance in  a systemic checklist. After completing a task, the task would be removed and then the next task in queue would take its place until all tasks are completed
 
 
 
