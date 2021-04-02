@@ -68,6 +68,66 @@ The user selects "Create new task" option
 ### Alternate Postconditions
 
 * The app does not create an empty note
+
+
+
+**Use Case #2 Name:** 
+
+**Date:** 
+
+ 
+
+## Summary
+
+write here
+
+ 
+ 
+## Actors
+
+1. The user
+
+
+
+## Preconditions
+
+* Write here
+
+ 
+
+## Triggers
+
+The user selects "Create new task" option
+
+ 
+
+## Primary Sequence
+
+1. write
+2. etc
+
+
+
+
+## Primary Postconditions
+
+* write
+
+
+
+## Alternate Sequences
+
+write
+
+ 
+
+### Alternate Trigger
+
+* write
+
+### Alternate Postconditions
+
+* write
  
 
 ## Non-functional Requirements
