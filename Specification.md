@@ -3,6 +3,7 @@
 **Team Members Name & Username:** Brian Nguyen (Brian1226), Christy Nguyen (cnguyenth), Karan Sharma (Kar-Sha)
 
 
+
 # Use Case Description
 
 **Product Name:** Priority Queue
@@ -105,20 +106,20 @@ To delete a note, the user can select the note they want to be deleted, then sel
 
 ## Alternate Sequences
 
-write
+2. If the user clicks "cancel", then the app will not delete a the note
 
  
 ### Alternate Trigger
 
-* write
+* The user clicks on the "cancel" option
 
 
 ### Alternate Postconditions
 
-* write
+* The app does not delete the note
  
  
- ***
+***
  
  
 ## Non-functional Requirements
