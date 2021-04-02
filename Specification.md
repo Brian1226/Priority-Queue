@@ -4,7 +4,7 @@
 
 **Product Name:** Priority Queue
 
-**Problem Statement:** The to-do app-Priority Queue allows for users to organize their tasks from greater importance to least importance in a systemic checklist. After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed.
+**Problem Statement:** The to-do app-Priority Queue allows for users to organize their tasks from greater importance to least importance in a systemic checklist (aka note). After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed. Then, the next checklist (note) in queue will take its place. This continues until all notes are completed.
 
 
 ***
