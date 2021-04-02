@@ -91,13 +91,13 @@ write here
 
 ## Preconditions
 
-* A task has to exist first before a user can delete it
+* A note has to exist first before a user can delete it
 
  
 
 ## Triggers
 
-* The user selects the task they want to delete, then select "delete task" option
+* The user selects the note they want to delete, then select "delete note" option
 
  
 
