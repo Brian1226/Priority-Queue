@@ -39,9 +39,10 @@ The user selects "Create new note" option
  
 ## Primary Sequence
 
-1. The app displays a message, asking the user to either confirm or cancel the action
-2. The user clicks on the "confirm" option
-3. The app creates a new, empty note
+1. The user clicks on the "Create new note" option
+2. The app displays a message, asking the user to either confirm or cancel the action
+3. The user clicks on the "Confirm" option
+4. The app creates a new, empty note
 
 
 ## Primary Postconditions
@@ -51,12 +52,12 @@ The user selects "Create new note" option
 
 ## Alternate Sequences
 
-2. If the user clicks "cancel", then the app will not create a new, empty note
+3. If the user clicks "Cancel", then the app will not create a new, empty note
 
  
 ### Alternate Trigger
 
-* The user clicks on the "cancel" option
+* The user clicks on the "Cancel" option
 
 
 ### Alternate Postconditions
@@ -74,7 +75,7 @@ The user selects "Create new note" option
  
 ## Summary
 
-To delete a note, the user can select the note they want to be deleted, then select the option "delete note" 
+To delete a note, the user can select the note, then select the option "delete note" 
 
  
 ## Actors
@@ -94,9 +95,11 @@ To delete a note, the user can select the note they want to be deleted, then sel
  
 ## Primary Sequence
 
-1. The app displays a message, asking the user to either confirm or cancel the action
-2. The user clicks on the "confirm" option
-3. The app deletes the selected note
+1. The user selects the note they want to delete
+2. The user clicks on the "Delete note" option
+3. The app displays a message, asking the user to either confirm or cancel the action
+4. The user clicks on the "confirm" option
+5. The app deletes the selected note
 
 
 ## Primary Postconditions
@@ -106,12 +109,12 @@ To delete a note, the user can select the note they want to be deleted, then sel
 
 ## Alternate Sequences
 
-2. If the user clicks "cancel", then the app will not delete a the note
+4. If the user clicks "Cancel", then the app will not delete a the note
 
  
 ### Alternate Trigger
 
-* The user clicks on the "cancel" option
+* The user clicks on the "Cancel" option
 
 
 ### Alternate Postconditions
@@ -124,7 +127,7 @@ To delete a note, the user can select the note they want to be deleted, then sel
 
 **Use Case #3 Name:** 
 
-**Date:** 4/2/2021
+**Date:** 4/3/2021
 
  
 ## Summary
