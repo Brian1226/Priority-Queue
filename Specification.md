@@ -142,7 +142,7 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Preconditions
 
-* A note has to exist first before the user can create tasks in it
+* A note has to exist first before the user can create tasks within it
 
  
 ## Triggers
@@ -152,13 +152,13 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
  
 ## Primary Sequence
 
-1. The user goes into a note
-2. The user clicks
+1. The user selects a note to go into
+2. The user clicks on the "Create new task" option
 
 
 ## Primary Postconditions
 
-* write
+* A new line appears within the note, where the user can type in a task
 
 
 ## Alternate Sequences
