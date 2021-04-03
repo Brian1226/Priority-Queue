@@ -34,7 +34,7 @@ Once the user opened the app, they can select the option "Create new note," whic
  
 ## Triggers
 
-The user selects "Create new note" option
+The user clicks on the "Create new note" option
 
  
 ## Primary Sequence
@@ -90,7 +90,7 @@ To delete a note, the user can select the note, then select the option "delete n
  
 ## Triggers
 
-* The user selects the note they want to delete, then select "delete note" option
+* The user selects the note they want to delete, then click on the "Delete note" option
 
  
 ## Primary Sequence
@@ -125,14 +125,14 @@ To delete a note, the user can select the note, then select the option "delete n
 ***
 
 
-**Use Case #3 Name:** 
+**Use Case #3 Name:** Create new task
 
 **Date:** 4/3/2021
 
  
 ## Summary
 
-write 
+Within the note, a user can create tasks by clicking on the "Create new task" option 
 
  
 ## Actors
@@ -142,18 +142,18 @@ write
 
 ## Preconditions
 
-* write
+* A note has to exist first before the user can create tasks in it
 
  
 ## Triggers
 
-* write
+* The user clicks on the "Create task" option within the note
 
  
 ## Primary Sequence
 
-1. write
-2. etc
+1. The user goes into a note
+2. The user clicks
 
 
 ## Primary Postconditions
