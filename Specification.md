@@ -2,87 +2,370 @@
 
 **Team Members Name & Username:** Brian Nguyen (Brian1226), Christy Nguyen (cnguyenth), Karan Sharma (Kar-Sha)
 
+**Product Name:** Priority Queue
+
+**Problem Statement:** The to-do app-Priority Queue allows users to collaborate on organizing and prioritzing tasks. The app organize their tasks from greater importance to least importance in a systemic checklist (aka note). After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed. Then, the next checklist (note) in queue will take its place. This continues until all notes are completed.
+
+
+***
+
 
 # Use Case Description
 
-**Product Name:** Priority Queue
+**Use Case #1 Name:** Create new note
 
-**Problem Statement:**
+**Date:** 4/1/2021
 
-So that people can complete important tasks on time, the to-do list app -Priority Queue - allows users to write down and complete their most urgent tasks without worrying about an unclear goal or not writing it down.
-
-
-**Use Case #1 Name:**
-
-**Date:**
-
- 
 
 ## Summary
 
-write summary here
+Once the user opened the app, they can select the option "Create new note," which opens up a new empty note.
 
- 
 
 ## Actors
 
-actor 1
-actor 2
-….
-
+1. The user
 
 ## Preconditions
 
-* precond 1
+* The user opened the app.
 
-* precond 2
-
-* ….
-
- 
 
 ## Triggers
 
-Explain trigger here
+The user clicks on the "Create new note" option, and then clicks on the "Confirm" option.
 
- 
 
 ## Primary Sequence
 
-step 1 action
-step 2 action
-etc
+1. The user clicks on the "Create new note" option.
+2. The app displays a message, asking the user to either confirm or cancel the action.
+3. The user clicks on the "Confirm" option.
+4. The app creates a new, empty note.
 
 
 ## Primary Postconditions
 
-* postcondition
+* The app creates an empty note.
 
-* postcondition
-
-* etc
-
- 
 
 ## Alternate Sequences
 
-Only if you have alt seq
+3. The user clicks "Cancel" option instead.
+    * The app doesn't create a new, empty note.
 
-* Step 1 alt. seq.
-* step 2 alt. seq.
-* etc
-
- 
 
 ### Alternate Trigger
 
+* The user clicks on the "Cancel" option.
+
+
 ### Alternate Postconditions
 
- 
+* The app does not create an empty note.
+
+
+***
+
+
+**Use Case #2 Name:** Delete note
+
+**Date:** 4/2/2021
+
+
+## Summary
+
+To delete a note, the user can select the note, then select the option "delete note". 
+
+
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* The selected note has to exist first before a user can delete it.
+
+
+## Triggers
+
+* The user selects the note they want to delete, clicks on the "Delete note" option, then clicks on the "Confirm" option.
+
+
+## Primary Sequence
+
+1. The user selects the note they want to delete.
+2. The user clicks on the "Delete note" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app deletes the selected note.
+
+
+## Primary Postconditions
+
+* The app deletes the note.
+
+
+## Alternate Sequences
+
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't delete the selected note.
+
+
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option.
+
+
+### Alternate Postconditions
+
+* The app does not delete the note.
+
+
+***
+
+
+**Use Case #3 Name:** Create new task
+
+**Date:** 4/3/2021
+
+
+## Summary
+
+Within the note, a user can create tasks by clicking on the "Create new task" option.
+
+
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* A note has to exist first before the user can create tasks within it.
+
+
+## Triggers
+
+* The user clicks on the "Create new task" option within the note, and clicks on the "Confirm" option
+
+
+## Primary Sequence
+
+1. The user selects a note to go into.
+2. The user clicks on the "Create new task" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app creates a new task
+
+
+## Primary Postconditions
+
+* A new line appears within the note, where the user can type in a task.
+
+
+## Alternate Sequences
+
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't create a new task.
+
+
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option
+
+
+### Alternate Postconditions
+
+* No new line for a task appears within the note.
+
+
+***
+
+
+**Use Case #4 Name:** Delete task
+
+**Date:** 4/3/2021
+
+
+## Summary
+
+The user can select a task within a note, then select the "Delete task" option to to delete the selected task.
+
+
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* The selected task has to exist within the note first before the user can delete the task.
+
+
+## Triggers
+
+Within the note, the user selects a task, clicks on the "Delete task" option, then clicks on the "Confirm" option.
+
+
+## Primary Sequence
+
+1. The user selects a note to go into.
+2. The user selects the task they want to delete.
+3. The user clicks on the "Delete task" option.
+4. The app displays a message, asking the user to either confirm or cancel the action.
+5. The user clicks on the "Confirm" option.
+6. The app deletes the selected task.
+
+
+## Primary Postconditions
+
+* The task gets deleted within the note.
+
+
+## Alternate Sequences
+
+5. The user clicks on the "Cancel" option instead.
+    * The app doesn't delete the selected task
+
+
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option.
+
+
+### Alternate Postconditions
+
+* The selected task doesn't get deleted.
+
+
+***
+
+
+**Use Case #5 Name:** Make copy
+
+**Date:** 4/3/2021
+
+
+## Summary
+
+The user can select a note, and create a copy of it by clicking on the "Make copy" option. The duplicated note now appears within the app, containing the same tasks.
+
+
+## Actors
+1. The user
+
+
+## Preconditions
+
+* The selected note must exist first before the user can create a copy of it.
+
+
+## Triggers
+
+The user selects the note they want to copy, clicks on the "Make copy" option, then clicks on the "Confirm" option.
+
+
+## Primary Sequence
+
+1. The user selects the note they want to make a copy of.
+2. The user clicks on the "Make copy" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app creates a copy of the selected note.
+
+
+## Primary Postconditions
+
+* A copy of the selected note, containing the same tasks, is created.
+
+
+## Alternate Sequences
+
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't create a copy of the selected note.
+
+
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option.
+
+
+### Alternate Postconditions
+
+* A copy of the selected note doesn't get created.
+
+
+***
+
+
+**Use Case #6 Name:** Invite collaborator
+
+**Date:** 4/3/2021
+
+
+## Summary
+
+The user can invite other people to collaborate, which will give them permission to see, create, and edit each other's notes and tasks.
+
+
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* The user and the invited collaborators need to be registered 
+* The user needs to know the email/username of the people they will invite
+
+
+## Triggers
+
+write
+
+
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
 
 ## Non-functional Requirements
 
- 
+* A message should be displayed saying that the user added/deleted a note/task successfully
+* Only registered users can share tasks
+* Each note/task should be dated
+
 
 ## Glossary
+
+* user = a person who uses the app
+* note = a systematic checklist
+* task = each line of the note
+* queue = the priority of each list, or the priority of each tasks within a list (the elements are in order from most important to least, from top to bottom)
 
