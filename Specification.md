@@ -206,28 +206,29 @@ Within the note, the user selects a task and clicks on the "Delete task" option
  
 ## Primary Sequence
 
-1. write
-2. write
+1. The user selects a note to go into
+2. The user selects the task they want to delete
+3. The user clicks on the "Delete task" option
 
 
 ## Primary Postconditions
 
-* write
+* The task gets deleted within the note
 
 
 ## Alternate Sequences
 
-write
+3. The user decides not to delete the task
 
  
 ### Alternate Trigger
 
-* write
+* The user doesn't click the "Delete task" option
 
 
 ### Alternate Postconditions
 
-* write
+* The task doesn't get deleted
 
 
 ***
