@@ -12,14 +12,14 @@
 
 # Use Case Description
 
-**Use Case #1 Name:** Create new note
+**Use Case #1 Name:** Create New Note
 
 **Date:** 4/1/2021
 
 
 ## Summary
 
-Once the user opened the app, they can select the option "Create new note," which opens up a new empty note.
+Once the user opened the app, they can select the option "Create New Note," which opens up a new empty note.
 
 
 ## Actors
@@ -33,12 +33,12 @@ Once the user opened the app, they can select the option "Create new note," whic
 
 ## Triggers
 
-The user clicks on the "Create new note" option, and then clicks on the "Confirm" option.
+The user clicks on the "Create New Note" option, and then clicks on the "Confirm" option.
 
 
 ## Primary Sequence
 
-1. The user clicks on the "Create new note" option.
+1. The user clicks on the "Create New Note" option.
 2. The app displays a message, asking the user to either confirm or cancel the action.
 3. The user clicks on the "Confirm" option.
 4. The app creates a new, empty note.
@@ -68,14 +68,14 @@ The user clicks on the "Create new note" option, and then clicks on the "Confirm
 ***
 
 
-**Use Case #2 Name:** Delete note
+**Use Case #2 Name:** Delete Note
 
 **Date:** 4/2/2021
 
 
 ## Summary
 
-To delete a note, the user can select the note, then select the option "delete note". 
+To delete a note, the user can select the note, then select the option "Delete Note". 
 
 
 ## Actors
@@ -90,13 +90,13 @@ To delete a note, the user can select the note, then select the option "delete n
 
 ## Triggers
 
-* The user selects the note they want to delete, clicks on the "Delete note" option, then clicks on the "Confirm" option.
+* The user selects the note they want to delete, clicks on the "Delete Note" option, then clicks on the "Confirm" option.
 
 
 ## Primary Sequence
 
 1. The user selects the note they want to delete.
-2. The user clicks on the "Delete note" option.
+2. The user clicks on the "Delete Note" option.
 3. The app displays a message, asking the user to either confirm or cancel the action.
 4. The user clicks on the "Confirm" option.
 5. The app deletes the selected note.
@@ -126,14 +126,14 @@ To delete a note, the user can select the note, then select the option "delete n
 ***
 
 
-**Use Case #3 Name:** Create new task
+**Use Case #3 Name:** Create New Task
 
 **Date:** 4/3/2021
 
 
 ## Summary
 
-Within the note, a user can create tasks by clicking on the "Create new task" option.
+Within the note, a user can create tasks by clicking on the "Create New Task" option.
 
 
 ## Actors
@@ -148,13 +148,13 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Triggers
 
-* The user clicks on the "Create new task" option within the note, and clicks on the "Confirm" option
+* The user clicks on the "Create New Task" option within the note, and clicks on the "Confirm" option
 
 
 ## Primary Sequence
 
 1. The user selects a note to go into.
-2. The user clicks on the "Create new task" option.
+2. The user clicks on the "Create New Task" option.
 3. The app displays a message, asking the user to either confirm or cancel the action.
 4. The user clicks on the "Confirm" option.
 5. The app creates a new task
@@ -184,14 +184,14 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 ***
 
 
-**Use Case #4 Name:** Delete task
+**Use Case #4 Name:** Delete Task
 
 **Date:** 4/3/2021
 
 
 ## Summary
 
-The user can select a task within a note, then select the "Delete task" option to to delete the selected task.
+The user can select a task within a note, then select the "Delete Task" option to to delete the selected task.
 
 
 ## Actors
@@ -206,14 +206,14 @@ The user can select a task within a note, then select the "Delete task" option t
 
 ## Triggers
 
-Within the note, the user selects a task, clicks on the "Delete task" option, then clicks on the "Confirm" option.
+Within the note, the user selects a task, clicks on the "Delete Task" option, then clicks on the "Confirm" option.
 
 
 ## Primary Sequence
 
 1. The user selects a note to go into.
 2. The user selects the task they want to delete.
-3. The user clicks on the "Delete task" option.
+3. The user clicks on the "Delete Task" option.
 4. The app displays a message, asking the user to either confirm or cancel the action.
 5. The user clicks on the "Confirm" option.
 6. The app deletes the selected task.
@@ -243,14 +243,14 @@ Within the note, the user selects a task, clicks on the "Delete task" option, th
 ***
 
 
-**Use Case #5 Name:** Make copy
+**Use Case #5 Name:** Make Copy
 
 **Date:** 4/3/2021
 
 
 ## Summary
 
-The user can select a note, and create a copy of it by clicking on the "Make copy" option. The duplicated note now appears within the app, containing the same tasks.
+The user can select a note, and create a copy of it by clicking on the "Make Copy" option. The duplicated note now appears within the app, containing the same tasks.
 
 
 ## Actors
@@ -264,13 +264,13 @@ The user can select a note, and create a copy of it by clicking on the "Make cop
 
 ## Triggers
 
-The user selects the note they want to copy, clicks on the "Make copy" option, then clicks on the "Confirm" option.
+The user selects the note they want to copy, clicks on the "Make Copy" option, then clicks on the "Confirm" option.
 
 
 ## Primary Sequence
 
 1. The user selects the note they want to make a copy of.
-2. The user clicks on the "Make copy" option.
+2. The user clicks on the "Make Copy" option.
 3. The app displays a message, asking the user to either confirm or cancel the action.
 4. The user clicks on the "Confirm" option.
 5. The app creates a copy of the selected note.
@@ -300,7 +300,7 @@ The user selects the note they want to copy, clicks on the "Make copy" option, t
 ***
 
 
-**Use Case #6 Name:** Invite collaborator
+**Use Case #6 Name:** Invite Collaborators
 
 **Date:** 4/3/2021
 
@@ -323,12 +323,12 @@ The user can invite other people to collaborate, which will give them permission
 
 ## Triggers
 
-The user clicks on the "Invite collaborators" option.
+The user clicks on the "Invite Collaborators" option.
 
 
 ## Primary Sequence
 
-1. The user clicks on the "Invite collaborators" option.
+1. The user clicks on the "Invite Collaborators" option.
 2. The app displays a message, prompting the user for the email of the people to be invited.
 3. The user type in the email of the collaborators.
 
@@ -353,6 +353,60 @@ The user clicks on the "Invite collaborators" option.
 ### Alternate Postconditions
 
 * The app will continue displaying the error message and prompting for valid email, until the user types a valid email.
+
+
+***
+
+
+**Use Case #7 Name:** Enable Dark mode
+
+**Date:** 4/3/2021
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
 
 
 ***
