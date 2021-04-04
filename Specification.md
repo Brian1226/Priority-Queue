@@ -335,7 +335,7 @@ The user clicks on the "Invite collaborators" option.
 
 ## Primary Postconditions
 
-* write
+* The user's notes and tasks gets shared to the invited collaborators. Every person can now create, see, and edit each other's notes and tasks.
 
 
 ## Alternate Sequences
