@@ -233,7 +233,7 @@ Within the note, the user selects a task, clicks on the "Delete task" option, th
  
 ### Alternate Trigger
 
-* The user doesn't click the "Cancel" option.
+* The user clicks on the "Cancel" option.
 
 
 ### Alternate Postconditions
@@ -279,22 +279,23 @@ The user selects the note they want to copy, clicks on the "Make copy" option, t
 
 ## Primary Postconditions
 
-* A duplicate of the selected note, containing the same tasks, is created.
+* A copy of the selected note, containing the same tasks, is created.
 
 
 ## Alternate Sequences
 
-write
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't create a copy of the selected note.
 
  
 ### Alternate Trigger
 
-* write
+* The user clicks on the "Cancel" option.
 
 
 ### Alternate Postconditions
 
-* write
+* A copy of the selected note doesn't get created.
 
 
 ***
@@ -302,8 +303,13 @@ write
 
 ## Non-functional Requirements
 
+*
+*
+*
+
  
 ## Glossary
+
 * user = a person who uses the app
 * note = a systematic checklist
 * task = each line of the note
