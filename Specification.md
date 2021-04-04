@@ -340,17 +340,19 @@ The user clicks on the "Invite collaborators" option.
 
 ## Alternate Sequences
 
-write
+3. The user types in an invalid email.
+    * The app displays an error message to the user.
+    * The app prompts the user to type in a valid email.
 
 
 ### Alternate Trigger
 
-* write
+* The user types in the collaborator's email again.
 
 
 ### Alternate Postconditions
 
-* write
+* The app will continue displaying the error message and prompting for valid email, until the user types a valid email.
 
 
 ***
