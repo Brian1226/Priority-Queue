@@ -179,14 +179,14 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 ***
 
 
-**Use Case #4 Name:** 
+**Use Case #4 Name:** Delete task
 
-**Date:** 
+**Date:** 4/3/2021
 
  
 ## Summary
 
-write
+The user can select a task within a note, then select the "Delete task" option to to delete the selected task
 
  
 ## Actors
@@ -196,12 +196,12 @@ write
 
 ## Preconditions
 
-* write
+* A task has to exist within the note first before the user can delete the task
 
  
 ## Triggers
 
-write
+Within the note, the user selects a task and clicks on the "Delete task" option
 
  
 ## Primary Sequence
