@@ -234,6 +234,60 @@ Within the note, the user selects a task and clicks on the "Delete task" option
 ***
 
 
+**Use Case #5 Name:** 
+
+**Date:** 
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
+
 ## Non-functional Requirements
 
  
