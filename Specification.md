@@ -317,19 +317,20 @@ The user can invite other people to collaborate, which will give them permission
 
 ## Preconditions
 
-* The user and the invited collaborators need to be registered 
-* The user needs to know the email/username of the people they will invite
+* The user and the invited collaborators need to be registered.
+* The user needs to know the email/username of the people they will invite.
 
 
 ## Triggers
 
-write
+The user clicks on the "Invite collaborators" option.
 
 
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the "Invite collaborators" option.
+2. The app displays a message, prompting the user for the email of the people to be invited.
+3. The user type in the email of the collaborators.
 
 
 ## Primary Postconditions
