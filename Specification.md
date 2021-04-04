@@ -265,18 +265,21 @@ The user can select a note, and create a copy of it by clicking on the "Make cop
  
 ## Triggers
 
-The user selects the note they want to duplicate, then clicks on the "Make copy" option.
+The user selects the note they want to copy, clicks on the "Make copy" option, then clicks on the "Confirm" option.
 
  
 ## Primary Sequence
 
-1. The user 
-2. write
+1. The user selects the note they want to make a copy of.
+2. The user clicks on the "Make copy" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app creates a copy of the selected note.
 
 
 ## Primary Postconditions
 
-* write
+* The selected note has to exist first before the user can make a copy of it.
 
 
 ## Alternate Sequences
