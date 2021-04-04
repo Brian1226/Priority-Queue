@@ -318,7 +318,7 @@ The user can invite other people to collaborate, which will give them permission
 
 ## Preconditions
 
-* The user needs to be registered 
+* The user and the invited collaborators need to be registered 
 * The user needs to know the email/username of the people they will invite
 
  
