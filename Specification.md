@@ -279,7 +279,7 @@ The user selects the note they want to copy, clicks on the "Make copy" option, t
 
 ## Primary Postconditions
 
-* The selected note has to exist first before the user can make a copy of it.
+* A duplicate of the selected note, containing the same tasks, is created.
 
 
 ## Alternate Sequences
