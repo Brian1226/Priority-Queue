@@ -301,6 +301,60 @@ The user selects the note they want to copy, clicks on the "Make copy" option, t
 ***
 
 
+**Use Case #6 Name:** Invite collaborator
+
+**Date:** 4/3/2021
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
+
 ## Non-functional Requirements
 
 *
