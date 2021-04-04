@@ -34,7 +34,7 @@ Once the user opened the app, they can select the option "Create new note," whic
  
 ## Triggers
 
-The user clicks on the "Create new note" option
+The user clicks on the "Create new note" option, and then clicks on the "Confirm" option
 
  
 ## Primary Sequence
@@ -90,7 +90,7 @@ To delete a note, the user can select the note, then select the option "delete n
  
 ## Triggers
 
-* The user selects the note they want to delete, then click on the "Delete note" option
+* The user selects the note they want to delete, clicks on the "Delete note" option, then clicks on the "Confirm" option
 
  
 ## Primary Sequence
@@ -98,7 +98,7 @@ To delete a note, the user can select the note, then select the option "delete n
 1. The user selects the note they want to delete
 2. The user clicks on the "Delete note" option
 3. The app displays a message, asking the user to either confirm or cancel the action
-4. The user clicks on the "confirm" option
+4. The user clicks on the "Confirm" option
 5. The app deletes the selected note
 
 
@@ -163,7 +163,7 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Alternate Sequences
 
-write
+None
 
  
 ### Alternate Trigger
