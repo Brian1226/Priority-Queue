@@ -52,7 +52,8 @@ The user clicks on the "Create new note" option, and then clicks on the "Confirm
 
 ## Alternate Sequences
 
-3. If the user clicks "Cancel", then the app will not create a new, empty note.
+3. The user clicks "Cancel" option instead.
+    * The app doesn't create a new, empty note.
 
  
 ### Alternate Trigger
@@ -109,7 +110,8 @@ To delete a note, the user can select the note, then select the option "delete n
 
 ## Alternate Sequences
 
-4. If the user clicks "Cancel", then the app will not delete a the note.
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't delete the selected note.
 
  
 ### Alternate Trigger
@@ -147,13 +149,16 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
  
 ## Triggers
 
-* The user clicks on the "Create new task" option within the note.
+* The user clicks on the "Create new task" option within the note, and clicks on the "Confirm" option
 
  
 ## Primary Sequence
 
 1. The user selects a note to go into.
 2. The user clicks on the "Create new task" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app creates a new task
 
 
 ## Primary Postconditions
@@ -163,17 +168,18 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Alternate Sequences
 
-2. The user decides not to create a new task.
+4. The user clicks on the "Cancel" option instead.
+    * The app doesn't create a new task.
 
  
 ### Alternate Trigger
 
-* The user doesn't click on the "Create new task" option.
+* The user clicks on the "Cancel" option
 
 
 ### Alternate Postconditions
 
-* No new line appears within the note.
+* No new line for a task appears within the note.
 
 
 ***
@@ -201,7 +207,7 @@ The user can select a task within a note, then select the "Delete task" option t
  
 ## Triggers
 
-Within the note, the user selects a task and clicks on the "Delete task" option.
+Within the note, the user selects a task, clicks on the "Delete task" option, then clicks on the "Confirm" option.
 
  
 ## Primary Sequence
@@ -209,6 +215,9 @@ Within the note, the user selects a task and clicks on the "Delete task" option.
 1. The user selects a note to go into.
 2. The user selects the task they want to delete.
 3. The user clicks on the "Delete task" option.
+4. The app displays a message, asking the user to either confirm or cancel the action.
+5. The user clicks on the "Confirm" option.
+6. The app deletes the selected task.
 
 
 ## Primary Postconditions
@@ -218,17 +227,18 @@ Within the note, the user selects a task and clicks on the "Delete task" option.
 
 ## Alternate Sequences
 
-3. The user decides not to delete the task.
+5. The user clicks on the "Cancel" option instead.
+    * The app doesn't delete the selected task
 
  
 ### Alternate Trigger
 
-* The user doesn't click the "Delete task" option.
+* The user doesn't click the "Cancel" option.
 
 
 ### Alternate Postconditions
 
-* The task doesn't get deleted.
+* The selected task doesn't get deleted.
 
 
 ***
@@ -245,7 +255,6 @@ The user can select a note, and create a copy of it by clicking on the "Make cop
 
  
 ## Actors
-
 1. The user
 
 
@@ -261,7 +270,7 @@ The user selects the note they want to duplicate, then clicks on the "Make copy"
  
 ## Primary Sequence
 
-1. write
+1. The user 
 2. write
 
 
