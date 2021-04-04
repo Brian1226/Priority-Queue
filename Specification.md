@@ -308,7 +308,7 @@ The user selects the note they want to copy, clicks on the "Make copy" option, t
  
 ## Summary
 
-write
+The user can invite other people to collaborate, which will give them permission to see, create, and edit each other's notes and tasks.
 
  
 ## Actors
