@@ -318,7 +318,7 @@ The user can invite other people to collaborate, which will give them permission
 
 ## Preconditions
 
-* write
+* The user needs to know the email/username of the people they will invite
 
  
 ## Triggers
