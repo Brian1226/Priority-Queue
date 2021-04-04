@@ -147,7 +147,7 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
  
 ## Triggers
 
-* The user clicks on the "Create task" option within the note
+* The user clicks on the "Create new task" option within the note
 
  
 ## Primary Sequence
@@ -163,17 +163,17 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Alternate Sequences
 
-None
+2. The user decides not to create a new task
 
  
 ### Alternate Trigger
 
-* write
+* The user doesn't click on the "Create new task" option
 
 
 ### Alternate Postconditions
 
-* write
+* No new line appears within the note
 
 
 ***
