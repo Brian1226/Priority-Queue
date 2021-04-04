@@ -29,40 +29,40 @@ Once the user opened the app, they can select the option "Create new note," whic
 
 ## Preconditions
 
-* The user opened the app
+* The user opened the app.
 
  
 ## Triggers
 
-The user clicks on the "Create new note" option, and then clicks on the "Confirm" option
+The user clicks on the "Create new note" option, and then clicks on the "Confirm" option.
 
  
 ## Primary Sequence
 
-1. The user clicks on the "Create new note" option
-2. The app displays a message, asking the user to either confirm or cancel the action
-3. The user clicks on the "Confirm" option
-4. The app creates a new, empty note
+1. The user clicks on the "Create new note" option.
+2. The app displays a message, asking the user to either confirm or cancel the action.
+3. The user clicks on the "Confirm" option.
+4. The app creates a new, empty note.
 
 
 ## Primary Postconditions
 
-* The app creates an empty note
+* The app creates an empty note.
 
 
 ## Alternate Sequences
 
-3. If the user clicks "Cancel", then the app will not create a new, empty note
+3. If the user clicks "Cancel", then the app will not create a new, empty note.
 
  
 ### Alternate Trigger
 
-* The user clicks on the "Cancel" option
+* The user clicks on the "Cancel" option.
 
 
 ### Alternate Postconditions
 
-* The app does not create an empty note
+* The app does not create an empty note.
 
 
 ***
@@ -75,7 +75,7 @@ The user clicks on the "Create new note" option, and then clicks on the "Confirm
  
 ## Summary
 
-To delete a note, the user can select the note, then select the option "delete note" 
+To delete a note, the user can select the note, then select the option "delete note". 
 
  
 ## Actors
@@ -85,41 +85,41 @@ To delete a note, the user can select the note, then select the option "delete n
 
 ## Preconditions
 
-* A note has to exist first before a user can delete it
+* The selected note has to exist first before a user can delete it.
 
  
 ## Triggers
 
-* The user selects the note they want to delete, clicks on the "Delete note" option, then clicks on the "Confirm" option
+* The user selects the note they want to delete, clicks on the "Delete note" option, then clicks on the "Confirm" option.
 
  
 ## Primary Sequence
 
-1. The user selects the note they want to delete
-2. The user clicks on the "Delete note" option
-3. The app displays a message, asking the user to either confirm or cancel the action
-4. The user clicks on the "Confirm" option
-5. The app deletes the selected note
+1. The user selects the note they want to delete.
+2. The user clicks on the "Delete note" option.
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user clicks on the "Confirm" option.
+5. The app deletes the selected note.
 
 
 ## Primary Postconditions
 
-* The app deletes the note
+* The app deletes the note.
 
 
 ## Alternate Sequences
 
-4. If the user clicks "Cancel", then the app will not delete a the note
+4. If the user clicks "Cancel", then the app will not delete a the note.
 
  
 ### Alternate Trigger
 
-* The user clicks on the "Cancel" option
+* The user clicks on the "Cancel" option.
 
 
 ### Alternate Postconditions
 
-* The app does not delete the note
+* The app does not delete the note.
  
  
 ***
@@ -132,7 +132,7 @@ To delete a note, the user can select the note, then select the option "delete n
  
 ## Summary
 
-Within the note, a user can create tasks by clicking on the "Create new task" option 
+Within the note, a user can create tasks by clicking on the "Create new task" option.
 
  
 ## Actors
@@ -142,38 +142,38 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
 
 ## Preconditions
 
-* A note has to exist first before the user can create tasks within it
+* A note has to exist first before the user can create tasks within it.
 
  
 ## Triggers
 
-* The user clicks on the "Create new task" option within the note
+* The user clicks on the "Create new task" option within the note.
 
  
 ## Primary Sequence
 
-1. The user selects a note to go into
-2. The user clicks on the "Create new task" option
+1. The user selects a note to go into.
+2. The user clicks on the "Create new task" option.
 
 
 ## Primary Postconditions
 
-* A new line appears within the note, where the user can type in a task
+* A new line appears within the note, where the user can type in a task.
 
 
 ## Alternate Sequences
 
-2. The user decides not to create a new task
+2. The user decides not to create a new task.
 
  
 ### Alternate Trigger
 
-* The user doesn't click on the "Create new task" option
+* The user doesn't click on the "Create new task" option.
 
 
 ### Alternate Postconditions
 
-* No new line appears within the note
+* No new line appears within the note.
 
 
 ***
@@ -186,7 +186,7 @@ Within the note, a user can create tasks by clicking on the "Create new task" op
  
 ## Summary
 
-The user can select a task within a note, then select the "Delete task" option to to delete the selected task
+The user can select a task within a note, then select the "Delete task" option to to delete the selected task.
 
  
 ## Actors
@@ -196,52 +196,52 @@ The user can select a task within a note, then select the "Delete task" option t
 
 ## Preconditions
 
-* A task has to exist within the note first before the user can delete the task
+* The selected task has to exist within the note first before the user can delete the task.
 
  
 ## Triggers
 
-Within the note, the user selects a task and clicks on the "Delete task" option
+Within the note, the user selects a task and clicks on the "Delete task" option.
 
  
 ## Primary Sequence
 
-1. The user selects a note to go into
-2. The user selects the task they want to delete
-3. The user clicks on the "Delete task" option
+1. The user selects a note to go into.
+2. The user selects the task they want to delete.
+3. The user clicks on the "Delete task" option.
 
 
 ## Primary Postconditions
 
-* The task gets deleted within the note
+* The task gets deleted within the note.
 
 
 ## Alternate Sequences
 
-3. The user decides not to delete the task
+3. The user decides not to delete the task.
 
  
 ### Alternate Trigger
 
-* The user doesn't click the "Delete task" option
+* The user doesn't click the "Delete task" option.
 
 
 ### Alternate Postconditions
 
-* The task doesn't get deleted
+* The task doesn't get deleted.
 
 
 ***
 
 
-**Use Case #5 Name:** 
+**Use Case #5 Name:** Make copy
 
-**Date:** 
+**Date:** 4/3/2021
 
  
 ## Summary
 
-write
+The user can select a note, and create a copy of it by clicking on the "Make copy" option. The duplicated note now appears within the app, containing the same tasks.
 
  
 ## Actors
@@ -251,12 +251,12 @@ write
 
 ## Preconditions
 
-* write
+* The selected note must exist first before the user can create a copy of it.
 
  
 ## Triggers
 
-write
+The user selects the note they want to duplicate, then clicks on the "Make copy" option.
 
  
 ## Primary Sequence
