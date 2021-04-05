@@ -386,7 +386,7 @@ The user clicks on the "Enable Dark Mode" option.
 ## Primary Sequence
 
 1. The user clicks on the "Enable Dark Mode" option.
-2. The app's background changes to black, and the text's color chnages to white.
+2. The app's background changes to black, and the text's color changes to white.
 
 
 ## Primary Postconditions
@@ -396,17 +396,18 @@ The user clicks on the "Enable Dark Mode" option.
 
 ## Alternate Sequences
 
-write
+3. The user clicks on the "Enable Dark Mode" option again.
+    * Dark mode gets reverted to default state.
 
  
 ### Alternate Trigger
 
-* write
+* The user clicks on the "Enabled Dark Mode" option again.
 
 
 ### Alternate Postconditions
 
-* write
+* the app is now back to having a white background with black text.
 
 
 ***
