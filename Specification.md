@@ -365,7 +365,7 @@ The user clicks on the "Invite Collaborators" option.
  
 ## Summary
 
-If the user wants a UI where the notes are on a black background, they can click on the "Enable Dark Mode" option. Clicking on the option again will revert it back to the original state (white background).
+By default, it is black text on a white background. If the user wants a UI where the notes are on a black background with white text instead, they can click on the "Enable Dark Mode" option. Clicking on the option again will revert it back to the original state.
 
  
 ## Actors
@@ -385,13 +385,13 @@ The user clicks on the "Enable Dark Mode" option.
  
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the "Enable Dark Mode" option.
+2. The app's background changes to black, and the text's color chnages to white.
 
 
 ## Primary Postconditions
 
-* write
+* App's background is black, and text's color is white.
 
 
 ## Alternate Sequences
