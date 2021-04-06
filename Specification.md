@@ -583,6 +583,114 @@ write
 ***
 
 
+**Use Case #11 Name:** 
+
+**Date:** 4/6/2021
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
+
+**Use Case #12 Name:** 
+
+**Date:** 4/6/2021
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
+
 ## Non-functional Requirements
 
 * A message should be displayed saying that the user added/deleted a note/task successfully
@@ -595,5 +703,5 @@ write
 * user = a person who uses the app
 * note = a systematic checklist
 * task = each line of the note
-* queue = the priority of each list, or the priority of each tasks within a list (the elements are in order from most important to least, from top to bottom)
+* queue = the priority of each note, or the priority of each task within a note
 
