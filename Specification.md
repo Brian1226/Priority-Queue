@@ -470,6 +470,60 @@ The note is not successfully downloaded into the users' device.
 ***
 
 
+**Use Case #9 Name:** 
+
+**Date:** 4/5/2021
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
+
+
+***
+
+
 ## Non-functional Requirements
 
 * A message should be displayed saying that the user added/deleted a note/task successfully
