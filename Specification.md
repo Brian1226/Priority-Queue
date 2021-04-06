@@ -478,7 +478,7 @@ The users click on the "Download" option.
  
 ## Summary
 
-write
+This allows the user to make an account for the app. 
 
  
 ## Actors
@@ -488,38 +488,42 @@ write
 
 ## Preconditions
 
-* write
+* The user has opened the app.
 
  
 ## Triggers
 
-write
+The user clicks on the "Sign Up" option.
 
  
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the "Sign Up" option.
+2. The user provides a username of their account as well as a password.
+3. The user provides an email to sign up with.
+4. A confirmation email is sent to their email. 
+
 
 
 ## Primary Postconditions
 
-* write
+* The user successfully makes an account.
 
 
 ## Alternate Sequences
 
-write
+2. The user provides an already existing username
+   * The user is unable to successfully make an account.
 
  
 ### Alternate Trigger
 
-* write
+* The user's username already exists
 
 
 ### Alternate Postconditions
 
-* write
+* The user is unable to make an account and has to provide a unique username to continue.
 
 
 ***
@@ -532,7 +536,7 @@ write
  
 ## Summary
 
-write
+This allows the user to be able to log into their account and access their notes. 
 
  
 ## Actors
@@ -542,12 +546,12 @@ write
 
 ## Preconditions
 
-* write
+* The user has to have an account made beforehand.
 
  
 ## Triggers
 
-write
+The user clicks on the "Log In" option.
 
  
 ## Primary Sequence
