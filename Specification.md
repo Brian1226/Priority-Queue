@@ -413,14 +413,14 @@ The user clicks on the "Enable Dark Mode" option.
 ***
 
 
-**Use Case #8 Name:** 
+**Use Case #8 Name:** Download
 
 **Date:** 4/5/2021
 
  
 ## Summary
 
-write
+This allows users and invited collaborators to download the note. 
 
  
 ## Actors
@@ -430,38 +430,41 @@ write
 
 ## Preconditions
 
-* write
+* The user and the invited collaborators need to be registered.
+* The selected note must exist first before the users can download a copy of it.
 
  
 ## Triggers
 
-write
+The users click on the "Download" option.
 
  
 ## Primary Sequence
 
-1. write
-2. write
+1. The user navigates and selects the desired note to be downloaded.
+2. The user selects the "Download" option.
+3. The user confirms the "Download" process by selecting the "Confirm" option.
+4. The note is downloaded and saved within the user's device. 
 
 
 ## Primary Postconditions
 
-* write
+* The note is downloaded into the users' device.
 
 
 ## Alternate Sequences
 
-write
+The user selects the "Cancel" option instead, and the note is therefore not downloaded.
 
  
 ### Alternate Trigger
 
-* write
+Upon selecting the "Download" option, the user selects the "Cancel" option. 
 
 
 ### Alternate Postconditions
 
-* write
+The note is not successfully downloaded into the users' device. 
 
 
 ***
