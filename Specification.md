@@ -443,8 +443,9 @@ The users click on the "Download" option.
 
 1. The user navigates and selects the desired note to be downloaded.
 2. The user selects the "Download" option.
-3. The user confirms the "Download" process by selecting the "Confirm" option.
-4. The note is downloaded and saved within the user's device. 
+3. The app displays a message, asking the user to either confirm or cancel the action.
+4. The user confirms the "Download" process by selecting the "Confirm" option.
+5. The note is downloaded and saved within the user's device. 
 
 
 ## Primary Postconditions
@@ -454,17 +455,17 @@ The users click on the "Download" option.
 
 ## Alternate Sequences
 
-The user selects the "Cancel" option instead, and the note is therefore not downloaded.
-
+4. The user selects the "Cancel" option instead
+    * The note doesn't get downloaded. 
  
 ### Alternate Trigger
 
-Upon selecting the "Download" option, the user selects the "Cancel" option. 
+* Upon selecting the "Download" option, the user selects the "Cancel" option. 
 
 
 ### Alternate Postconditions
 
-The note is not successfully downloaded into the users' device. 
+* The note is not successfully downloaded into the users' device. 
 
 
 ***
