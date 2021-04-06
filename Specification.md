@@ -471,7 +471,7 @@ The users click on the "Download" option.
 ***
 
 
-**Use Case #9 Name:** 
+**Use Case #9 Name:** Sign up
 
 **Date:** 4/5/2021
 
@@ -525,7 +525,7 @@ write
 ***
 
 
-**Use Case #10 Name:** 
+**Use Case #10 Name:** Log in
 
 **Date:** 4/5/2021
 
