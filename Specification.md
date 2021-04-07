@@ -645,14 +645,14 @@ The user clicks on the "Change Note Color" option within a note.
 ***
 
 
-**Use Case #12 Name:** 
+**Use Case #12 Name:** Change Username/Password
 
 **Date:** 4/6/2021
 
 
 ## Summary
 
-write
+This allows users to change their username or password if forgotten, or for any other reasons.
 
 
 ## Actors
@@ -662,38 +662,41 @@ write
 
 ## Preconditions
 
-* write
+* The user must already have an existing account in order to receive the instructions to change their username/password. 
 
 
 ## Triggers
 
-write
+On the login page, the user selects the option "Forgot Username/Password". 
 
 
 ## Primary Sequence
 
-1. write
-2. write
+1. On the login page, the user selects the option "Forgot Username/Password".
+2. The user will be prompted to enter account email address to receive further instructions.
+3. Upon entering the email address, the user should receive an email with a link, confirming the request for a username/password change. 
+4. The link will allow the user to set a new username/password, save the changes, and be directed back to the login page.
+5. The user enters the new username/password and logs into the account. 
 
 
 ## Primary Postconditions
 
-* write
+* The account's username/password is changed. 
 
 
 ## Alternate Sequences
 
-write
+6. The user logs into the account without selecting the option "Forgot Username/Password".
 
 
 ### Alternate Trigger
 
-* write
+* The user does not select the option "Forgot Username/Password".
 
 
 ### Alternate Postconditions
 
-* write
+* The user's account username and password remain unchanged. 
 
 
 ***
