@@ -313,6 +313,7 @@ The user can invite other people to collaborate, which will give them permission
 ## Actors
 
 1. The user
+2. Invited collaborators
 
 
 ## Preconditions
