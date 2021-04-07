@@ -582,7 +582,7 @@ write
 
 ***
 
-**Use Case #11 Name:** Change note color
+**Use Case #11 Name:** Change Note Color
 
 **Date:** 4/6/2021
 
@@ -689,6 +689,62 @@ write
 ### Alternate Postconditions
 
 * write
+
+
+***
+
+**Use Case #13 Name:** Set Reminder
+
+**Date:** 4/6/2021
+
+ 
+## Summary
+
+The user can choose a time and date for a note, which will send the user a notification.
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* A note has to exist first before a user can set a reminder for it.
+
+ 
+## Triggers
+
+The user clicks on the "Set Reminder" option.
+
+ 
+## Primary Sequence
+
+1. The user selects a note.
+2. The user clicks on the "Set Reminder" option.
+3. The app prompts the user for a date and time.
+4. The user selects a date and time.
+
+
+## Primary Postconditions
+
+* The reminder gets set for the note.
+
+
+## Alternate Sequences
+
+3. The user clicks on the "Cancel" option.
+    * A reminder doesn't get set for the note.
+
+ 
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option.
+
+
+### Alternate Postconditions
+
+* A reminder doesn't get set for the note. The user will not receive any notification for the note.
 
 
 ***
