@@ -817,14 +817,14 @@ The user clicks on the "Add Image" option within the note.
 ***
 
 
-**Use Case #15 Name:** 
+**Use Case #15 Name:** See History
 
 **Date:** 4/6/2021
 
  
 ## Summary
 
-write
+A user can see a list of all actions made by other shared users with the date next to them: creation, deletion, and edits of notes and tasks.
 
  
 ## Actors
@@ -834,38 +834,38 @@ write
 
 ## Preconditions
 
-* write
+* The user opened the app.
 
  
 ## Triggers
 
-write
+The user clicks on the "See History" option.
 
  
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the "See History" option.
+2. The app displays a list of all actions made by the user and the invite collaborators (if any).
 
 
 ## Primary Postconditions
 
-* write
+* A list of all actions made appears.
 
 
 ## Alternate Sequences
 
-write
+None
 
  
 ### Alternate Trigger
 
-* write
+* None
 
 
 ### Alternate Postconditions
 
-* write
+* None
 
 
 ***
@@ -873,9 +873,10 @@ write
 
 ## Non-functional Requirements
 
-* A message should be displayed saying that the user added/deleted a note/task successfully
-* Only registered users can share tasks
-* Each note/task should be dated
+* A message should be displayed saying that the user added/deleted a note/task successfully.
+* Only registered users can share tasks.
+* Each note/task should be dated.
+* The app displays messages in English.
 
 
 ## Glossary
