@@ -890,3 +890,6 @@ None
 * task = each line of the note
 * queue = the priority of each note, or the priority of each task within a note
 
+
+## UML Use Case Diagram
+![UML](https://cdn1.bbcode0.com/uploads/2021/4/8/d2a563fae6439cb799c3a3845fbd6872-full.png)
