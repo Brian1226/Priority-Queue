@@ -686,7 +686,7 @@ On the login page, the user selects the option "Forgot Username/Password".
 
 ## Alternate Sequences
 
-6. The user logs into the account without selecting the option "Forgot Username/Password".
+1. The user logs into the account without selecting the option "Forgot Username/Password".
 
 
 ### Alternate Trigger
@@ -889,6 +889,9 @@ None
 * note = a systematic checklist
 * task = each line of the note
 * queue = the priority of each note, or the priority of each task within a note
+
+
+***
 
 
 ## UML Use Case Diagram
