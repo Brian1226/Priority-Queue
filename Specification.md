@@ -362,12 +362,12 @@ The user clicks on the "Invite Collaborators" option.
 
 **Date:** 4/3/2021
 
- 
+
 ## Summary
 
 By default, it is black text on a white background. If the user wants a UI where the notes are on a black background with white text instead, they can click on the "Enable Dark Mode" option. Clicking on the option again will revert it back to the original state.
 
- 
+
 ## Actors
 
 1. The user
@@ -377,12 +377,12 @@ By default, it is black text on a white background. If the user wants a UI where
 
 * The user opened the app.
 
- 
+
 ## Triggers
 
 The user clicks on the "Enable Dark Mode" option.
 
- 
+
 ## Primary Sequence
 
 1. The user clicks on the "Enable Dark Mode" option.
@@ -399,7 +399,7 @@ The user clicks on the "Enable Dark Mode" option.
 2. The user clicks on the "Enable Dark Mode" option again instead.
     * Dark mode gets reverted to default state.
 
- 
+
 ### Alternate Trigger
 
 * The user clicks on the "Enabled Dark Mode" option again.
@@ -417,12 +417,12 @@ The user clicks on the "Enable Dark Mode" option.
 
 **Date:** 4/5/2021
 
- 
+
 ## Summary
 
 This allows users and invited collaborators to download the note. 
 
- 
+
 ## Actors
 
 1. The user
@@ -433,12 +433,12 @@ This allows users and invited collaborators to download the note.
 * The user and the invited collaborators need to be registered.
 * The selected note must exist first before the users can download a copy of it.
 
- 
+
 ## Triggers
 
 The users click on the "Download" option.
 
- 
+
 ## Primary Sequence
 
 1. The user navigates and selects the desired note to be downloaded.
@@ -457,7 +457,7 @@ The users click on the "Download" option.
 
 4. The user selects the "Cancel" option instead
     * The note doesn't get downloaded. 
- 
+
 ### Alternate Trigger
 
 * Upon selecting the "Download" option, the user selects the "Cancel" option. 
@@ -475,12 +475,12 @@ The users click on the "Download" option.
 
 **Date:** 4/5/2021
 
- 
+
 ## Summary
 
 This allows the user to make an account for the app. 
 
- 
+
 ## Actors
 
 1. The user
@@ -490,12 +490,12 @@ This allows the user to make an account for the app.
 
 * The user has opened the app.
 
- 
+
 ## Triggers
 
 The user clicks on the "Sign Up" option.
 
- 
+
 ## Primary Sequence
 
 1. The user clicks on the "Sign Up" option.
@@ -515,7 +515,7 @@ The user clicks on the "Sign Up" option.
 2. The user provides an already existing username
    * The user is unable to successfully make an account.
 
- 
+
 ### Alternate Trigger
 
 * The user's username already exists
@@ -533,12 +533,12 @@ The user clicks on the "Sign Up" option.
 
 **Date:** 4/5/2021
 
- 
+
 ## Summary
 
 This allows the user to be able to log into their account and access their notes. 
 
- 
+
 ## Actors
 
 1. The user
@@ -548,12 +548,12 @@ This allows the user to be able to log into their account and access their notes
 
 * The user has to have an account made beforehand.
 
- 
+
 ## Triggers
 
 The user clicks on the "Log In" option.
 
- 
+
 ## Primary Sequence
 
 1. write
@@ -569,7 +569,7 @@ The user clicks on the "Log In" option.
 
 write
 
- 
+
 ### Alternate Trigger
 
 * write
@@ -582,17 +582,16 @@ write
 
 ***
 
-
-**Use Case #11 Name:** 
+**Use Case #11 Name:** Change note color
 
 **Date:** 4/6/2021
 
- 
+
 ## Summary
 
-write
+This allows the user to change the color of an existing note to a different color.
 
- 
+
 ## Actors
 
 1. The user
@@ -600,38 +599,42 @@ write
 
 ## Preconditions
 
-* write
+* The user already has an existing note.
 
- 
+
 ## Triggers
 
-write
+The user clicks on the "Change Note Color" option within a note.
 
- 
+
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the note they want to change the color of.
+2. The user clicks on the "Change Note Color" option.
+3. The app brings up a list of colors.
+4. The user clicks on one of the colors.
+5. The color of the note changes to the user's choice.
 
 
 ## Primary Postconditions
 
-* write
+* The chosen note is in a different color.
 
 
 ## Alternate Sequences
 
-write
+3. The user clicks on "Cancel"
+   * The note color remains the same.
 
- 
+
 ### Alternate Trigger
 
-* write
+* The user clicks on the "Cancel" option.
 
 
 ### Alternate Postconditions
 
-* write
+* The color of the note does not change.
 
 
 ***
@@ -641,12 +644,12 @@ write
 
 **Date:** 4/6/2021
 
- 
+
 ## Summary
 
 write
 
- 
+
 ## Actors
 
 1. The user
@@ -656,12 +659,12 @@ write
 
 * write
 
- 
+
 ## Triggers
 
 write
 
- 
+
 ## Primary Sequence
 
 1. write
@@ -677,7 +680,7 @@ write
 
 write
 
- 
+
 ### Alternate Trigger
 
 * write
