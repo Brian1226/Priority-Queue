@@ -757,6 +757,66 @@ The user clicks on the "Set Reminder" option.
 ***
 
 
+**Use Case #14 Name:** Add Image
+
+**Date:** 4/6/2021
+
+ 
+## Summary
+
+The user can add images within a note.
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* A note has to exist before the user can add images within it.
+
+ 
+## Triggers
+
+The user clicks on the "Add Image" option within the note.
+
+ 
+## Primary Sequence
+
+1. The user selects a note.
+2. The user clicks on the "Add Image" option.
+3. The app opens up the user's file manager.
+4. The user selects an image.
+5. The app displays a message, asking the user to either confirm or cancel the action.
+6. The user clicks on the "Confirm" option.
+7. The image gets added into the note.
+
+
+## Primary Postconditions
+
+* The image gets added into the note.
+
+
+## Alternate Sequences
+
+6. The user clicks on the "Cancel" option instead.
+    * The image doesn't get added into the note.
+
+ 
+### Alternate Trigger
+
+* The user clicks on the "Cancel" option.
+
+
+### Alternate Postconditions
+
+* The image doesn't get added into the note.
+
+
+***
+
+
 ## Non-functional Requirements
 
 * A message should be displayed saying that the user added/deleted a note/task successfully
