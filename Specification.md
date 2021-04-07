@@ -728,16 +728,19 @@ The user clicks on the "Set Reminder" option.
 2. The user clicks on the "Set Reminder" option.
 3. The app prompts the user for a date and time.
 4. The user selects a date and time.
+5. The app displays a message, asking the user to either confirm or cancel the action.
+6. The user clicks on the "Confirm" option. 
+7. The reminder gets set for the note.
 
 
 ## Primary Postconditions
 
-* The reminder gets set for the note.
+* The reminder gets set for the note, which will send the user a notfication at the chosen time.
 
 
 ## Alternate Sequences
 
-3. The user clicks on the "Cancel" option.
+6. The user clicks on the "Cancel" option.
     * A reminder doesn't get set for the note.
 
  
