@@ -817,9 +817,9 @@ The user clicks on the "Add Image" option within the note.
 ***
 
 
-**Use Case #1 Name:** 
+**Use Case #15 Name:** 
 
-**Date:** 
+**Date:** 4/6/2021
 
  
 ## Summary
