@@ -33,7 +33,7 @@ Once the user opened the app, they can select the option "Create New Note," whic
 
 ## Triggers
 
-The user clicks on the "Create New Note" option, and then clicks on the "Confirm" option.
+The user clicks on the "Create New Note" option.
 
 
 ## Primary Sequence
@@ -90,7 +90,7 @@ To delete a note, the user can select the note, then select the option "Delete N
 
 ## Triggers
 
-* The user selects the note they want to delete, clicks on the "Delete Note" option, then clicks on the "Confirm" option.
+* The user selects the note they want to delete, then clicks on the "Delete Note" option.
 
 
 ## Primary Sequence
@@ -120,7 +120,7 @@ To delete a note, the user can select the note, then select the option "Delete N
 
 ### Alternate Postconditions
 
-* The app does not delete the note.
+* The note continues to exist.
 
 
 ***
@@ -148,7 +148,7 @@ Within the note, a user can create tasks by clicking on the "Create New Task" op
 
 ## Triggers
 
-* The user clicks on the "Create New Task" option within the note, and clicks on the "Confirm" option
+* The user clicks on the "Create New Task" option within the note.
 
 
 ## Primary Sequence
@@ -206,7 +206,7 @@ The user can select a task within a note, then select the "Delete Task" option t
 
 ## Triggers
 
-Within the note, the user selects a task, clicks on the "Delete Task" option, then clicks on the "Confirm" option.
+Within the note, the user selects a task, then clicks on the "Delete Task" option.
 
 
 ## Primary Sequence
@@ -237,7 +237,7 @@ Within the note, the user selects a task, clicks on the "Delete Task" option, th
 
 ### Alternate Postconditions
 
-* The selected task doesn't get deleted.
+* The selected task continues to exist.
 
 
 ***
@@ -264,7 +264,7 @@ The user can select a note, and create a copy of it by clicking on the "Make Cop
 
 ## Triggers
 
-The user selects the note they want to copy, clicks on the "Make Copy" option, then clicks on the "Confirm" option.
+The user selects the note they want to copy, then clicks on the "Make Copy" option.
 
 
 ## Primary Sequence
@@ -331,6 +331,7 @@ The user clicks on the "Invite Collaborators" option.
 1. The user clicks on the "Invite Collaborators" option.
 2. The app displays a message, prompting the user for the email of the people to be invited.
 3. The user type in the email of the collaborators.
+4. The notes and tasks gets shared to the invited collaborators.
 
 
 ## Primary Postconditions
@@ -347,12 +348,12 @@ The user clicks on the "Invite Collaborators" option.
 
 ### Alternate Trigger
 
-* The user types in the collaborator's email again.
+* The user typed an invalid email.
 
 
 ### Alternate Postconditions
 
-* The app will continue displaying the error message and prompting for valid email, until the user types a valid email.
+* The notes and tasks doesn't get shared. The app displays a error message and prompts the user to type in a valid email.
 
 
 ***
@@ -386,7 +387,7 @@ The user clicks on the "Enable Dark Mode" option.
 ## Primary Sequence
 
 1. The user clicks on the "Enable Dark Mode" option.
-2. The app's background changes to black and the text's color changes to white, if the user don't click on the option again.
+2. The app's background changes to black and the text's color changes to white.
 
 
 ## Primary Postconditions
@@ -396,7 +397,7 @@ The user clicks on the "Enable Dark Mode" option.
 
 ## Alternate Sequences
 
-2. The user clicks on the "Enable Dark Mode" option again instead.
+2. The user clicks on the "Enable Dark Mode" option again.
     * Dark mode gets reverted to default state.
 
 
@@ -407,7 +408,7 @@ The user clicks on the "Enable Dark Mode" option.
 
 ### Alternate Postconditions
 
-* the app is now back to having a white background with black text.
+* The app is now back to having a white background with black text.
 
 
 ***
@@ -455,7 +456,7 @@ The users click on the "Download" option.
 
 ## Alternate Sequences
 
-4. The user selects the "Cancel" option instead
+4. The user selects the "Cancel" option instead.
     * The note doesn't get downloaded. 
 
 ### Alternate Trigger
@@ -499,9 +500,10 @@ The user clicks on the "Sign Up" option.
 ## Primary Sequence
 
 1. The user clicks on the "Sign Up" option.
-2. The user provides a username of their account as well as a password.
-3. The user provides an email to sign up with.
-4. A confirmation email is sent to their email. 
+2. The app prompts the user to enter a username, password, and email.
+3. The user provides a username of their account as well as a password.
+4. The user provides an email to sign up with.
+5. A confirmation email is sent to their email. 
 
 
 
@@ -512,13 +514,13 @@ The user clicks on the "Sign Up" option.
 
 ## Alternate Sequences
 
-2. The user provides an already existing username
+3. The user provides an already existing username.
    * The user is unable to successfully make an account.
 
 
 ### Alternate Trigger
 
-* The user's username already exists
+* The user's username already exists.
 
 
 ### Alternate Postconditions
@@ -609,11 +611,13 @@ The user clicks on the "Change Note Color" option within a note.
 
 ## Primary Sequence
 
-1. The user clicks on the note they want to change the color of.
+1. The user selects the note they want to change the color of.
 2. The user clicks on the "Change Note Color" option.
 3. The app brings up a list of colors.
 4. The user clicks on one of the colors.
-5. The color of the note changes to the user's choice.
+5. The app displays a message, asking the user to either confirm or cancel the action.
+6. The user clicks on the "Confirm" option.
+7. The color of the note changes to the user's choice.
 
 
 ## Primary Postconditions
@@ -623,7 +627,7 @@ The user clicks on the "Change Note Color" option within a note.
 
 ## Alternate Sequences
 
-3. The user clicks on "Cancel"
+6. The user clicks on "Cancel"
    * The note color remains the same.
 
 
