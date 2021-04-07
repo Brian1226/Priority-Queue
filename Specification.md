@@ -795,7 +795,7 @@ The user clicks on the "Add Image" option within the note.
 
 ## Primary Postconditions
 
-* The image gets added into the note.
+* The note now contains the selected image.
 
 
 ## Alternate Sequences
@@ -812,6 +812,60 @@ The user clicks on the "Add Image" option within the note.
 ### Alternate Postconditions
 
 * The image doesn't get added into the note.
+
+
+***
+
+
+**Use Case #1 Name:** 
+
+**Date:** 
+
+ 
+## Summary
+
+write
+
+ 
+## Actors
+
+1. The user
+
+
+## Preconditions
+
+* write
+
+ 
+## Triggers
+
+write
+
+ 
+## Primary Sequence
+
+1. write
+2. write
+
+
+## Primary Postconditions
+
+* write
+
+
+## Alternate Sequences
+
+write
+
+ 
+### Alternate Trigger
+
+* write
+
+
+### Alternate Postconditions
+
+* write
 
 
 ***
