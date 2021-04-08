@@ -579,7 +579,7 @@ The user clicks on the "Log In" option.
 
 
 ### Alternate Postconditions
-* The user is unable to log into their account. 
+* The user is unable to log into their account. The app displays an error message and prompts the user to enter their email and reset their password. 
 
 
 ***
