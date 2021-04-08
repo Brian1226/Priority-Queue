@@ -7,7 +7,7 @@
 **Problem Statement:** The to-do app-Priority Queue allows users to collaborate on organizing and prioritzing tasks. The app organize their tasks from greater importance to least importance in a systemic checklist (aka note). After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed. Then, the next checklist (note) in queue will take its place. This continues until all notes are completed.
 
 
----
+***
 
 
 # Use Case Description
@@ -65,7 +65,7 @@ The user clicks on the "Create New Note" option.
 * The app does not create an empty note.
 
 
----
+***
 
 
 **Use Case #2 Name:** Delete Note
@@ -123,7 +123,7 @@ To delete a note, the user can select the note, then select the option "Delete N
 * The note continues to exist.
 
 
----
+***
 
 
 **Use Case #3 Name:** Create New Task
@@ -181,7 +181,7 @@ Within the note, a user can create tasks by clicking on the "Create New Task" op
 * No new line for a task appears within the note.
 
 
----
+***
 
 
 **Use Case #4 Name:** Delete Task
@@ -240,7 +240,7 @@ Within the note, the user selects a task, then clicks on the "Delete Task" optio
 * The selected task continues to exist.
 
 
----
+***
 
 
 **Use Case #5 Name:** Make Copy
@@ -297,7 +297,7 @@ The user selects the note they want to copy, then clicks on the "Make Copy" opti
 * A copy of the selected note doesn't get created.
 
 
----
+***
 
 
 **Use Case #6 Name:** Invite Collaborators
@@ -357,7 +357,7 @@ The user clicks on the "Invite Collaborators" option.
 * The notes and tasks doesn't get shared. The app displays a error message and prompts the user to type in a valid email.
 
 
----
+***
 
 
 **Use Case #7 Name:** Enable Dark mode
@@ -412,7 +412,7 @@ The user clicks on the "Enable Dark Mode" option.
 * The app is now back to having a white background with black text.
 
 
----
+***
 
 
 **Use Case #8 Name:** Download
@@ -470,7 +470,7 @@ The users click on the "Download" option.
 * The note is not successfully downloaded into the users' device. 
 
 
----
+***
 
 
 **Use Case #9 Name:** Sign up
@@ -529,7 +529,7 @@ The user clicks on the "Sign Up" option.
 * The user is unable to make an account and has to provide a unique username to continue.
 
 
----
+***
 
 
 **Use Case #10 Name:** Log in
@@ -559,32 +559,30 @@ The user clicks on the "Log In" option.
 
 ## Primary Sequence
 
-1. write
-2. write
+1. The user clicks on the "Log In" option.
+2. THe app prompts the user to enter their username or email as well as their password to their account.
+3. The user provides their "Log In" information, username or email and password.
 
 
 ## Primary Postconditions
 
-* write
+* The user successfully logs into their account and can begin using features within the app. 
 
 
 ## Alternate Sequences
-
-write
+3. The user provides an incorrect password or incorrect username/email. 
+   * The user is unable to log into their account.     
 
 
 ### Alternate Trigger
-
-* write
+* The user provides incorrect login information or login information of an unregistered account. 
 
 
 ### Alternate Postconditions
+* The user is unable to log into their account. 
 
-* write
 
-
----
-
+***
 
 **Use Case #11 Name:** Change Note Color
 
@@ -643,7 +641,7 @@ The user clicks on the "Change Note Color" option within a note.
 * The color of the note does not change.
 
 
----
+***
 
 
 **Use Case #12 Name:** Change Username/Password
@@ -700,8 +698,7 @@ On the login page, the user selects the option "Forgot Username/Password".
 * The user's account username and password remain unchanged. 
 
 
----
-
+***
 
 **Use Case #13 Name:** Set Reminder
 
@@ -760,7 +757,7 @@ The user clicks on the "Set Reminder" option.
 * A reminder doesn't get set for the note. The user will not receive any notification for the note.
 
 
----
+***
 
 
 **Use Case #14 Name:** Add Image
@@ -820,7 +817,7 @@ The user clicks on the "Add Image" option within the note.
 * The image doesn't get added into the note.
 
 
----
+***
 
 
 **Use Case #15 Name:** See History
@@ -874,7 +871,7 @@ None
 * None
 
 
----
+***
 
 
 ## Non-functional Requirements
@@ -893,7 +890,7 @@ None
 * queue = the priority of each note, or the priority of each task within a note
 
 
----
+***
 
 
 ## UML Use Case Diagram
