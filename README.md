@@ -1,9 +1,29 @@
 # TEAM-5
 
-**Brian Nguyen (Brian1226)**
+**Team Members:** Brian Nguyen (Brian1226), Christy Nguyen (cnguyenth), Karan Sharma (Kar-Sha), Jin You Goh (jackedjin)
 
-**Christy Nguyen (cnguyenth)**
+**Product Name:** Priority Queue
 
-**Karan Sharma (Kar-Sha)**
+## Introduction
+write
 
-**Jin You Goh (jackedjin)**
+## How to Run
+write
+
+## How to Use 
+write
+
+## Implemented Use Cases
+write
+
+## Image
+
+## Technologies Used
+
+## Acknowledgements / References
+
+
+
+
+
+
