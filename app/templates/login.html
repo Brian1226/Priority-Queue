@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <style>
-h1 {
-    text-align: center;
-    font-size: 125px;
-    color: white;
-}
+    h1 {
+        text-align: center;
+        font-size: 125px;
+        color: white;
+    }
 
-div {
-    text-align: center;
-    background-color: lightgray;
-    border: solid;
-    font-size: 30px;
-    width: 30%;
-    left: 35%;
-    top: 30%;
-    position: absolute;
-}
-
-
+    div {
+        text-align: center;
+        background-color: lightgray;
+        border: solid;
+        font-size: 30px;
+        width: 30%;
+        left: 35%;
+        top: 30%;
+        position: absolute;
+    }
 </style>
+
 <h1> Priority Queue</h1>
 <div>
     <h2>Sign In</h2>
@@ -36,5 +36,7 @@ div {
         </p>
         <p> {{ form.submit() }} </p>
     </form>
+    <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
 </div>
+
 {% endblock %}
