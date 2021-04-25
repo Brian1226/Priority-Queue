@@ -36,7 +36,8 @@ def register():
         elif email:
             print(f'Email is already taken') #should be a flash message
         else:
-            user = User(username = form.username.data, email = form.email.data, password = form.password.data)
+            user = User(username = form.username.data, email = form.email.data)
+            user.set_password(form.password.data)
             db.session.add(user)
             db.session.commit()
             print(f'Registered user {user.username}') #for testing purposes, remove this later
