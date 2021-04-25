@@ -14,31 +14,41 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
-        if user is None or not user.check_password(form.password.data): # redirect back to login page if invalid user / password
-            flash('Invalid username or password')
+
+        if user is None:
+            flash('Username does not exist')
             return redirect('/')
 
-    # WORK IN PROGRESS
+        elif not user.check_password(form.password.data):
+            flash('Incorrect password')
+            return redirect('/')
+
+        else:
+            return redirect(url_for('task'))
 
     return render_template('login.html', title='Sign In', form=form)
+
+
 
 @myapp_obj.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    return redirect(url_for('login')
+
+
 
 @myapp_obj.route('/register', methods=['GET', 'POST'])
 def register():
     form = registerForm()
 
-    if form.validate_on_submit(): 
+    if form.validate_on_submit():
         user = User.query.filter_by(username = form.username.data).first()
         email = User.query.filter_by(email = form.email.data).first()
         if user:
             flash('Username is already taken')
             return redirect(url_for('register'))
         elif email:
-            flash('Email is already taken') 
+            flash('Email is already taken')
             return redirect(url_for('register'))
         else:
             user = User(username = form.username.data, email = form.email.data)
@@ -48,4 +58,10 @@ def register():
             flash('Successfully registered')
             return redirect(url_for('login'))
 
-    return render_template('registerpage.html', form=form)
+    return render_template('registerpage.html', title='Register', form=form)
+
+
+
+@myapp_obj.route('/task')
+def task():
+    return render_template('task.html', title='Tasks')
