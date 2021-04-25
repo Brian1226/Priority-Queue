@@ -33,7 +33,7 @@ def login():
 @myapp_obj.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('login')
+    return redirect(url_for('login'))
 
 
 
