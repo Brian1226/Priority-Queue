@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect
+from flask import render_template, flash, redirect, url_for
 from flask_login import current_user, login_user
 from flask_login import logout_user
 from flask_login import login_required
@@ -32,14 +32,17 @@ def register():
         user = User.query.filter_by(username = form.username.data).first()
         email = User.query.filter_by(email = form.email.data).first()
         if user:
-            print(f'Username is already taken') #should be a flash message
+            flash('Username is already taken')
+            return redirect(url_for('register'))
         elif email:
-            print(f'Email is already taken') #should be a flash message
+            flash('Email is already taken') 
+            return redirect(url_for('register'))
         else:
             user = User(username = form.username.data, email = form.email.data)
             user.set_password(form.password.data)
             db.session.add(user)
             db.session.commit()
-            print(f'Registered user {user.username}') #for testing purposes, remove this later
+            flash('Successfully registered')
+            return redirect(url_for('login'))
 
     return render_template('registerpage.html', form=form)
