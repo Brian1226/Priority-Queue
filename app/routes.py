@@ -22,7 +22,10 @@ def login():
 
     return render_template('login.html', title='Sign In', form=form)
 
-
+@myapp_obj.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
 
 @myapp_obj.route('/register', methods=['GET', 'POST'])
 def register():
