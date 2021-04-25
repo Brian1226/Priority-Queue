@@ -28,10 +28,13 @@ def login():
 def register():
     form = registerForm()
 
-    if form.validate_on_submit(): #need to check if username or email is already taken
+    if form.validate_on_submit(): 
         user = User.query.filter_by(username = form.username.data).first()
+        email = User.query.filter_by(email = form.email.data).first()
         if user:
             print(f'Username is already taken') #should be a flash message
+        elif email:
+            print(f'Email is already taken') #should be a flash message
         else:
             user = User(username = form.username.data, email = form.email.data, password = form.password.data)
             db.session.add(user)
