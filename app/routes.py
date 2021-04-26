@@ -29,10 +29,10 @@ def login():
             login_user(user)
             next_page = request.args.get('next')
             if not next_page or url_parse(next_page).netloc != '':
-                next_page = url_for('task') 
+                next_page = url_for('task')
             return redirect(next_page)
 
-    return render_template('login.html', title='Sign In', form=form)
+    return render_template('login.html', title='Log In', form=form)
 
 
 
@@ -50,12 +50,15 @@ def register():
     if form.validate_on_submit():
         user = User.query.filter_by(username = form.username.data).first()
         email = User.query.filter_by(email = form.email.data).first()
+
         if user:
             flash('Username is already taken')
             return redirect(url_for('register'))
+
         elif email:
             flash('Email is already taken')
             return redirect(url_for('register'))
+
         else:
             user = User(username = form.username.data, email = form.email.data)
             user.set_password(form.password.data)
