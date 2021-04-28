@@ -1,5 +1,7 @@
 # TEAM-5
 
+**Github Repository URL:** https://github.com/Brian1226/TEAM-5
+
 **Team Members:** Brian Nguyen (Brian1226), Christy Nguyen (cnguyenth), Karan Sharma (Kar-Sha), Jin You Goh (jackedjin)
 
 **Product Name:** Priority Queue
