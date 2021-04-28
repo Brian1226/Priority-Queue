@@ -9,9 +9,6 @@
 ## Introduction
 The to-do app Priority Queue allows users to collaborate on organizing and prioritzing tasks. The app organize their tasks from greater importance to least importance in a systemic checklist (aka note). After completing a task, the task would be removed and then the next task in queue would take its place. This continues until all tasks are completed. Then, the next checklist (note) in queue will take its place. This continues until all notes are completed.
 
-## How to Run
-TBD
-
 ## How to Use 
 1. The home page is the login page. If a registration is needed, click on "Register", which will redirect to the register page.
 2. After filling out the register form with a valid email, username, and password, it will redirect back to the login page.
