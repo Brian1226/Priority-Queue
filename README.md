@@ -22,8 +22,8 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 3. **Log out:** Clicking the "log out" button will sign out and redirect back to the login page.
 4. **Create New Note:** Clicking on the "Create New Note" button should create a new, empty note.
 5. **Delete Note:**
-6. **Create New Task:**
-7. **Delete Task:**
+6. **Create New Task:** Clicking the "Create New Task" button will create a new task.
+7. **Delete Task:** Clicking the "Delete Task" button will first direct user to confirm the delete action, and upon confirmation, deletes the respective task.
 
 ## Image
 **Login page:**
