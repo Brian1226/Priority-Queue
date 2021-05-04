@@ -6,9 +6,9 @@ from flask_login import login_required
 from werkzeug.urls import url_parse
 
 from app import myapp_obj
-from app.forms import LoginForm, registerForm
+from app.forms import LoginForm, registerForm, TaskForm
 
-from app.models import User, Note
+from app.models import User, Note, Task
 from app import db
 from datetime import datetime
 
@@ -106,8 +106,23 @@ def delete_note(id):
     db.create_all
     db.session.delete(delNote)
     db.session.commit()
-
+    
 @myapp_obj.route('/task', methods=['GET', 'POST'])
-@login_required
-def task():
-    return render_template('task.html', title='Tasks')
+def createtask():
+    form = TaskForm()
+
+    task = Task(content = form.content.data)
+    #db.session.add(task)
+    #db.session.commit()
+    #flash('Task created')
+
+    return render_template('task.html', title='Tasks', form=form)
+
+@myapp_obj.route('/viewtask', methods=['GET','POST'])
+def deletetask():
+    form = TaskForm()
+    tasks = Task.query.first()
+    if tasks is None:
+        flash('There is no tasks to delete')
+
+    return render_template('task.html', title='Tasks', form=form)
