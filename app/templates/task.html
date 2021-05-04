@@ -3,9 +3,21 @@
 {% block content %}
 <style>
     h1 {
+        text-align: center;
+        font-size: 90px;
         color: white;
     }
 
+    div {
+        text-align: left;
+        background-color: lightgray;
+        border: solid;
+        font-size: 30px;
+        width: 30%;
+        left: 35%;
+        top: 30%;
+        position: absolute;
+    }
     .button {
         background-color: lightgray;
         color: black;
@@ -15,11 +27,23 @@
     }
 </style>
 
-<h1>
-    PLACEHOLDER FOR NOW
-</h1>
+<h1>Edit Task</h1>
+<div>
+    <h2>Delete Task</h2>
+    <p><a href="{{ url_for('deletetask') }}" class="button">Delete Task</a></p>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.content.label }}<br>
+            {{ form.content(size=32) }}
+        </p>
+        <p> {{ form.submit() }} </p>
+    </form>
+</div>
+
 
 <!-- Adding this here to test the logout function. Should be removed or moved elsewhere later -->
-<p><a href="{{ url_for('logout') }}" class="button">Log out</a></p>
+<p><a href="{{ url_for('logout') }}" class="button">Log Out</a></p>
 
 {% endblock %}
+
