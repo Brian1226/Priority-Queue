@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 {
+        color: white;
+    }
+
+    div {
+        color: white
+    }
+
+    .buttons {
+        width: 200px;
+        margin: 0 auto;
+        display: inline;
+    }
+
+    .action_btn {
+        width: 200px;
+        margin: 0 auto;
+        display: inline;
+    }   
+</style>
+
+<h1>
+    PLACEHOLDER FOR NOTES
+</h1>
+
+<div class = "buttons">
+    <div class = "action_btn">   
+    <button name="submit" class="action_btn create" type="submit" value="Create" onclick="create_note()">Create Note</button>
+    <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete Note</button>
+
+    <p id="saved"></p>
+    </div>
+</div>
+
+{% if not notes %}
+<div> There are no notes to delete! </div>
+{% endif %}
+
+{% endblock %}
