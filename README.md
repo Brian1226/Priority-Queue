@@ -20,9 +20,9 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 1. **Sign In:** After filling out the login form with the valid username and password, clicking the "Sign in" button will redirect to the task page.
 2. **Sign Up:** After filling out the register page with the valid email, username, and password, click the "Sign up" button will redirect to the login page.
 3. **Log out:** Clicking the "log out" button will sign out and redirect back to the login page.
-4. **View Note:** Clicking on the "View Note" button displays all the created notes.
+4. **View Note:** Displays all the created notes, otherwise prints the message "There's no notes to delete!"
 5. **Delete Note:** Clicking on the "Delete Note" button will delete the selected note.
-6. **View Task:** Clicking the "View Task" button displays all the created tasks.
+6. **View Task:** Displays all the created tasks, otherwise prints the meassage "There's no tasks to delete!"
 7. **Delete Task:** Clicking the "Delete Task" button will first direct user to confirm the delete action, and upon confirmation, deletes the respective task.
 
 **Other features to be added later: Create New Note, Create New Task...**
