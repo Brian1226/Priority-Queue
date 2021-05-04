@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, Response
 from flask_login import current_user, login_user
 from flask_login import logout_user
 from flask_login import login_required
@@ -8,8 +8,9 @@ from werkzeug.urls import url_parse
 from app import myapp_obj
 from app.forms import LoginForm, registerForm
 
-from app.models import User
+from app.models import User, Note
 from app import db
+from datetime import datetime
 
 @myapp_obj.route("/", methods=['GET', 'POST'])
 def login():
@@ -29,7 +30,7 @@ def login():
             login_user(user)
             next_page = request.args.get('next')
             if not next_page or url_parse(next_page).netloc != '':
-                next_page = url_for('task')
+                next_page = url_for('view_note')
             return redirect(next_page)
 
     return render_template('login.html', title='Log In', form=form)
@@ -69,9 +70,44 @@ def register():
 
     return render_template('registerpage.html', title='Register', form=form)
 
+#Incomplete create note function
+'''
+@myapp_obj.route('/create', methods=['POST'])
+@login_required
+def create_note():
+    user = User.query.filter_by(username=username).first()
+    note = Note(
+        userID=current_user.id, time=timestamp.datetime
+    )
+    db.create_all
+    db.session.add(note)
+    db.session.commit()
+    return render_template('note.html', title='Notes')
+'''
+@myapp_obj.route('/notes', methods=['GET', 'POST'])
+@login_required
+def view_note():
+    user = current_user
+    notes = user.notes.all()
+    final = []
+    for n in notes:
+        information = []
+        information.append(n.body)
+        information.append(n.timestamp)
+        final.append(information)
+    return render_template('note.html', title='Notes', usernotes=final)
 
 
-@myapp_obj.route('/task')
+@myapp_obj.route('/delete', methods=['POST'])
+@login_required
+def delete_note(id):
+    print(id)
+    delNote = Note.query.filter_by(id=id).first()
+    db.create_all
+    db.session.delete(delNote)
+    db.session.commit()
+
+@myapp_obj.route('/task', methods=['GET', 'POST'])
 @login_required
 def task():
     return render_template('task.html', title='Tasks')
