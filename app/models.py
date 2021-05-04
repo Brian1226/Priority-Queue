@@ -31,7 +31,7 @@ class Note(db.Model):
     def __repr__(self):
         return '<Notes {}>'.format(self.body)
 
- class Task(db.Model):
+class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(300))
 
