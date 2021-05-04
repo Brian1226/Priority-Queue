@@ -34,6 +34,10 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 **Register page:**
 ![Register](https://i.postimg.cc/kGw3CgFV/Screen-Shot-2021-04-28-at-10-24-17-AM.png)
 
+**View Notes page:**
+
+![View](https://i.postimg.cc/mrfpQHD0/Screen-Shot-2021-05-03-at-11-40-38-PM.png)
+
 ## Technologies Used
 * HTML
 * Python
