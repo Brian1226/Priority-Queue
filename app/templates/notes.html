@@ -26,7 +26,6 @@
 
     .White {
       background-color: white;
-      color: white;
   }
   
     .Gray {
@@ -64,20 +63,14 @@
   <form action="" method="post" novalidate>
     {{ colorForm.hidden_tag() }}
   
-    {{ colorForm.noteColor.label }}
     {{ colorForm.noteColor }}
   
     {{ colorForm.submit }}
   </form>
+
+    <p class = {{color}}> DSFDSFdsf</p>
+
   
-  {% if color == 'White' %}
-    <p class = 'White'> color</p>
-  {% elif color == 'Gray' %}
-    <p class = 'Gray'> color </p>
-  {% elif color == 'Orange' %}
-    <p class = 'Orange'> Testing </p>
-    {% elif color == 'Pink' %}
-    <p class = 'pink'> Testing </p>
   {% endif %}
 
 {% endblock %}
