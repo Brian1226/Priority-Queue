@@ -2,56 +2,70 @@
 
 {% block content %}
 <style>
-    h1 {
-        color: white;
-    }
-
-    div {
-        color: white
-    }
-
-    .buttons {
-        width: 200px;
-        margin: 0 auto;
-        display: inline;
-    }
-
-    .action_btn {
-        width: 200px;
-        margin: 0 auto;
-        display: inline;
-    }  
-
-
-
-    .White {
-      background-color: white;
-  }
-  
-    .Gray {
-      background-color:gray;
+  h1 {
+    color: white;
   }
 
-    .Orange{
-      background-color: orange;
+  div {
+    color: white
   }
 
-    .Pink{
-      background-color: pink;
-  } 
+  .logout {
+    background-color: lightgray;
+    color: black;
+    font-size: 18px;
+    padding: 15px 35px;
+    border: solid black;
+  }
+
+
+  .buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+
+
+  .action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+
+
+
+  .White {
+    background-color: white;
+  }
+
+  .Gray {
+    background-color: gray;
+  }
+
+  .Orange {
+    background-color: orange;
+  }
+
+  .Pink {
+    background-color: pink;
+  }
 </style>
 
 <h1>
-    PLACEHOLDER FOR NOTES
+  PLACEHOLDER FOR NOTES
 </h1>
 
-<div class = "buttons">
-    <div class = "action_btn">   
-    <button name="submit" class="action_btn create" type="submit" value="Create" onclick="create_note()">Create Note</button>
-    <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete Note</button>
+<p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
+
+<div class="buttons">
+  <div class="action_btn">
+    <button name="submit" class="action_btn create" type="submit" value="Create" onclick="create_note()">Create
+      Note</button>
+    <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete
+      Note</button>
 
     <p id="saved"></p>
-    </div>
+  </div>
 </div>
 
 {% if not notes %}
@@ -60,15 +74,15 @@
 
 
 
-  <form action="" method="post" novalidate>
-    {{ colorForm.hidden_tag() }}
-  
-    {{ colorForm.noteColor }}
-  
-    {{ colorForm.submit }}
-  </form>
+<form action="" method="post" novalidate>
+  {{ colorForm.hidden_tag() }}
 
-    <p class = {{color}}> DSFDSFdsf</p>
+  {{ colorForm.noteColor }}
 
-  
+  {{ colorForm.submit }}
+</form>
+
+<p class={{color}}> DSFDSFdsf</p>
+
+
 {% endblock %}
