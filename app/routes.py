@@ -6,7 +6,7 @@ from flask_login import login_required
 from werkzeug.urls import url_parse
 
 from app import myapp_obj
-from app.forms import LoginForm, registerForm, TaskForm
+from app.forms import LoginForm, registerForm, TaskForm, ChangeNoteColor
 
 from app.models import User, Note, Task
 from app import db
@@ -87,6 +87,7 @@ def create_note():
 @myapp_obj.route('/notes', methods=['GET', 'POST'])
 @login_required
 def view_note():
+    colorForm = ChangeNoteColor()
     user = current_user
     notes = user.notes.all()
     final = []
@@ -95,7 +96,12 @@ def view_note():
         information.append(n.body)
         information.append(n.timestamp)
         final.append(information)
-    return render_template('notes.html', title='Notes', usernotes=final)
+
+    color = 'White'
+    if colorForm.validate_on_submit():
+        color = colorForm.noteColor.data
+        print(color)
+    return render_template('notes.html', title='Notes', usernotes=final, colorForm=colorForm, color=color)
 
 
 @myapp_obj.route('/delete', methods=['POST'])

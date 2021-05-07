@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, IntegerField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, IntegerField, SelectField
 from wtforms.validators import DataRequired, Email
 
 class LoginForm(FlaskForm):
@@ -16,3 +16,9 @@ class registerForm(FlaskForm):
 class TaskForm(FlaskForm):
     content = StringField("Create Task", validators = [DataRequired()])
     submit = SubmitField("Add Task")
+
+class ChangeNoteColor(FlaskForm):
+    noteColor = SelectField(
+        u'Note color',
+        choices = [('White', 'white'), ('Gray', 'gray'), ('Orange', 'orange'), ('Pink', 'pink')] )
+    submit = SubmitField("Change Note Color")
