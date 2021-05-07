@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 
 {%block content%}
-    <style>
-        div {
+<style>
+    div {
         text-align: center;
-        background-color: lightgray;
+        background-color: lightsteelblue;
         border: solid;
         font-size: 30px;
         width: 50%;
-        left: 20%;
-        top: 15%;
+        left: 25%;
+        top: 20%;
         position: absolute;
-        }
-    </style>
+        border-radius: 15px;
+    }
+</style>
 
-    <div>
+<div>
     <h1>Register</h1>
     <form action="" method="post" novalidate>
         {{form.hidden_tag()}}
@@ -44,6 +45,6 @@
         </p>
     </form>
     <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
-    </div>
+</div>
 
 {%endblock%}
