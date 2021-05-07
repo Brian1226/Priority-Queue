@@ -100,7 +100,6 @@ def view_note():
     color = 'White'
     if colorForm.validate_on_submit():
         color = colorForm.noteColor.data
-        print(color)
     return render_template('notes.html', title='Notes', usernotes=final, colorForm=colorForm, color=color)
 
 
