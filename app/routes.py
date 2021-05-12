@@ -82,7 +82,7 @@ def create_note():
     db.create_all
     db.session.add(note)
     db.session.commit()
-    return render_template('note.html', title='Notes')
+    return render_template('notes.html', title='Notes')
 '''
 @myapp_obj.route('/notes', methods=['GET', 'POST'])
 @login_required
