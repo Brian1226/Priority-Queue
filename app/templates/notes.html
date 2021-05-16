@@ -68,15 +68,10 @@
   </div>
 </div>
 
-{% if not notes %}
-<div> There are no notes to delete! </div>
-{% endif %}
-
-
 
 <form action="" method="post" novalidate>
   {{ colorForm.hidden_tag() }}
-  
+
   {{ colorForm.noteID.label }}
   {{ colorForm.noteID(size=2) }}
 
@@ -86,6 +81,22 @@
 </form>
 
 <p class={{color}}> DSFDSFdsf</p>
+
+
+{% if not usernotes %}
+  <div> There are no notes to delete! </div>
+{% else %}
+
+  {% for note in usernotes %}
+  {% if note.user_id == current_user.id %}   
+  <div class = {{note.color}}> 
+     <p> {{ note.id }} : {{ note.body }}</p>
+     <p> {{ note.timestamp }} </p>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+{% endif %}
 
 
 {% endblock %}
