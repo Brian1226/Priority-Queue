@@ -6,7 +6,7 @@ from flask_login import login_required
 from werkzeug.urls import url_parse
 
 from app import myapp_obj
-from app.forms import LoginForm, registerForm, TaskForm, ChangeNoteColor
+from app.forms import LoginForm, registerForm, NoteForm, TaskForm, ChangeNoteColor
 
 from app.models import User, Note, Task
 from app import db
