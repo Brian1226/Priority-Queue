@@ -13,6 +13,10 @@ class registerForm(FlaskForm):
     password = PasswordField("Password", validators = [DataRequired()])
     submit = SubmitField("Sign Up")
     
+class NoteForm(FlaskForm):
+    content = StringField("Create Note", validators = [DataRequired()])
+    submit = SubmitField("Create Note")
+    
 class TaskForm(FlaskForm):
     content = StringField("Create Task", validators = [DataRequired()])
     submit = SubmitField("Add Task")
