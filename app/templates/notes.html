@@ -76,6 +76,9 @@
 
 <form action="" method="post" novalidate>
   {{ colorForm.hidden_tag() }}
+  
+  {{ colorForm.noteID.label }}
+  {{ colorForm.noteID(size=2) }}
 
   {{ colorForm.noteColor }}
 

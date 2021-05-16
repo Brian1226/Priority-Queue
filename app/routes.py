@@ -15,6 +15,9 @@ from datetime import datetime
 @myapp_obj.route("/", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if current_user.is_authenticated:
+        return redirect(url_for('view_note'))
+
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
 
@@ -101,7 +104,17 @@ def view_note():
 
     color = 'White'
     if colorForm.validate_on_submit():
+        id = colorForm.noteID.data
+        updateNote = Note.query.filter_by(id = id).first() 
         color = colorForm.noteColor.data
+
+        if updateNote:
+            updateNote.color = color
+            db.session.commit()
+        else:
+            flash('Note does not exist')
+        return redirect(url_for('view_note')) #color of paragraph in html will change back upon refreshing since the color isn't stored in the database
+
     return render_template('notes.html', title='Notes', usernotes=final, colorForm=colorForm, color=color)
 
 

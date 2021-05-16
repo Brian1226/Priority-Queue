@@ -26,3 +26,5 @@ class ChangeNoteColor(FlaskForm):
         u'Note color',
         choices = [('White', 'white'), ('Gray', 'gray'), ('Orange', 'orange'), ('Pink', 'pink')] )
     submit = SubmitField("Change Note Color")
+    noteID = StringField("Note id:", validators = [DataRequired()])
+
