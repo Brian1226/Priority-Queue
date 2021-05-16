@@ -70,20 +70,22 @@ def register():
 
     return render_template('registerpage.html', title='Register', form=form)
 
-#Incomplete create note function
-'''
-@myapp_obj.route('/create', methods=['POST'])
+@myapp_obj.route('/create_note', methods=['GET', 'POST'])
 @login_required
 def create_note():
-    user = User.query.filter_by(username=username).first()
-    note = Note(
-        userID=current_user.id, time=timestamp.datetime
-    )
-    db.create_all
-    db.session.add(note)
-    db.session.commit()
-    return render_template('notes.html', title='Notes')
-'''
+    noteForm = NoteForm()
+    user = current_user
+    if noteForm.validate_on_submit():
+        if len(noteForm.content.data) > 0:
+            user = User.query.filter_by(username=username).first()
+            note = Note(
+                userID=current_user.id, time=timestamp.datetime
+            )
+            db.create_all
+            db.session.add(note)
+            db.session.commit()
+    return render_template('note.html', title='Notes', noteForm = noteForm)
+
 @myapp_obj.route('/notes', methods=['GET', 'POST'])
 @login_required
 def view_note():
