@@ -95,7 +95,7 @@ def view_note():
         information.append(n.body)
         information.append(n.timestamp)
         final.append(information)
-    return render_template('note.html', title='Notes', usernotes=final)
+    return render_template('notes.html', title='Notes', usernotes=final)
 
 
 @myapp_obj.route('/delete', methods=['POST'])
@@ -106,7 +106,7 @@ def delete_note(id):
     db.create_all
     db.session.delete(delNote)
     db.session.commit()
-    
+
 @myapp_obj.route('/task', methods=['GET', 'POST'])
 def createtask():
     form = TaskForm()

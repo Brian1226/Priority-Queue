@@ -20,7 +20,7 @@
         width: 200px;
         margin: 0 auto;
         display: inline;
-    }   
+    }
 </style>
 
 <h1>
@@ -28,9 +28,9 @@
 </h1>
 
 <div class = "buttons">
-    <div class = "action_btn">   
+    <div class = "action_btn">
     <button name="submit" class="action_btn create" type="submit" value="Create" onclick="create_note()">Create Note</button>
-    <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete Note</button>
+    <button><a href="{{ url_for('createtask') }}" class="createtask">Add Tasks</a></button>
 
     <p id="saved"></p>
     </div>
