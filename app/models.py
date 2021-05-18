@@ -11,6 +11,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(200), unique=False)
 
     notes = db.relationship('Note', backref='author', lazy='dynamic')
+    tasks = db.relationship('Task', backref='author', lazy='dynamic')
 
     def set_password(self, password):
         self.password = generate_password_hash(password)
