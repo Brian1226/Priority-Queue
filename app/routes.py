@@ -128,21 +128,57 @@ def delete_note(id):
     db.session.commit()
     
 @myapp_obj.route('/task', methods=['GET', 'POST'])
-def createtask():
-    form = TaskForm()
+@login_required
+def task():
+    taskForm = TaskForm()
+    #note = Note.query.get(id)
+    if taskForm.validate_on_submit():
+        task = Task(content = taskForm.content.data, author = current_user)
+        db.session.add(task)
+        db.session.commit()
+        flash('Task created')
 
-    task = Task(content = form.content.data)
-    #db.session.add(task)
-    #db.session.commit()
-    #flash('Task created')
+    allTask = Task.query.all() #find all the tasks associated with the note id
+    final = []
+    for n in allTask: #put the tasks into a list of dictionaries
+        final.append({'content': n.content, 'user_id':n.user_id})
 
-    return render_template('task.html', title='Tasks', form=form)
+    return render_template('task.html', title='Tasks', form=taskForm, tasks=final)
 
-@myapp_obj.route('/viewtask', methods=['GET','POST'])
+@myapp_obj.route('/deletetask', methods=['GET','POST']) 
+@login_required
 def deletetask():
-    form = TaskForm()
-    tasks = Task.query.first()
-    if tasks is None:
-        flash('There is no tasks to delete')
+    taskForm = TaskForm()
+    #taskQ = Task.query.filter(Task.note_id == id).first() #this one should get the note id from the url, maybe, i didn't test it
+    delTask = Task.query.filter(Task.user_id == current_user.id).first()
+    if delTask is None:
+        flash('There are no tasks to delete!')
+    else:
+        db.session.delete(delTask)
+        db.session.commit()
+        flash('Task deleted')
 
-    return render_template('task.html', title='Tasks', form=form)
+    return redirect(url_for('task')) #should really return a redirect to /viewtask/<int:id> but I couldn't get it to work
+
+@myapp_obj.route('/cleartask', methods=['GET','POST']) #gets a note id and clears all tasks associated with that note
+@login_required
+def cleartask():
+    allTask = Task.query.filter(Task.user_id == current_user.id).all() #find all the tasks associated with the note with the id <int:id>
+    for n in allTask: #delete all notes
+        db.session.delete(n)
+        db.session.commit()
+
+    return redirect(url_for('task'))
+
+@myapp_obj.route('/copytask', methods=['GET','POST']) #gets a task id and copies the id associated with that task
+@login_required
+def copytask():
+    task = Task.query.filter(Task.user_id == current_user.id).first() #gets the task 
+    parentUserId = task.user_id #gets the id of the parent note
+    #note = Note.query.get(parentNoteId) #gets the actual parent note so we can backref it (Let the task know that it's associated with that note)
+    tasks = Task(content = task.content, author = current_user) #create a new task object so we can add it to database
+
+    db.session.add(tasks)
+    db.session.commit()
+
+    return redirect(url_for('task')) 
