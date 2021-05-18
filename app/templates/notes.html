@@ -52,15 +52,14 @@
 </style>
 
 <h1>
-  PLACEHOLDER FOR NOTES
+  Home
 </h1>
 
 <p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
 
 <div class="buttons">
   <div class="action_btn">
-    <button name="submit" class="action_btn create" type="submit" value="Create" onclick="create_note()">Create
-      Note</button>
+    <button><a href="{{ url_for('create_note') }}" class="create_note">Create Note</a></button>
     <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete
       Note</button>
 
