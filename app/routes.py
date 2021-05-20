@@ -169,21 +169,18 @@ def copy_note(id):
 
 #     return render_template('task.html', title='Tasks', form=form)
 
-#incomplete function
-@myapp_obj.route('/deletetask', methods=['GET','POST']) #should be a dynamic url
+@myapp_obj.route('/deletetask/<int:id>', methods=['GET','POST']) 
 @login_required
-def deletetask(): #deletes the first task in the query. Should get the first task in the note query then delete it
-    form = TaskForm()
-    #taskQ = Task.query.filter(Task.note_id == id).first() #this one should get the note id from the url, maybe, i didn't test it
-    tasks = Task.query.first() 
-    if tasks is None:
+def deletetask(id): #deletes the first task in a note
+    taskQ = Task.query.filter(Task.note_id == id).first() 
+    if taskQ is None:
         flash('There is no tasks to delete')
     else:
-        db.session.delete(tasks) #change to delete taskQ later
+        db.session.delete(taskQ) 
         db.session.commit()
         flash('Task deleted')
 
-    return redirect(url_for('view_note')) #should really return a redirect to /viewtask/<int:id> but I couldn't get it to work
+    return redirect(url_for('viewtask', id=id)) 
 
 @myapp_obj.route('/viewtask/<int:id>', methods=['GET','POST']) #gets a note id and views the tasks associated with the note
 @login_required

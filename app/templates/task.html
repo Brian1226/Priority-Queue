@@ -32,7 +32,7 @@
 <h1>Edit Task</h1>
 <div>
     <h2>Delete Task</h2>
-    <p><a href="{{ url_for('deletetask') }}" class="button">Delete Task</a></p>
+    <p><a href="{{ url_for('deletetask', id=id) }}" class="button">Delete Task</a></p>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
