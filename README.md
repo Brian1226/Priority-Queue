@@ -15,8 +15,16 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 1. The home page is the login page. If a registration is needed, click on "Register", which will redirect to the register page.
 2. After filling out the register form with a valid email, username, and password, it will redirect back to the login page.
 3. Sign in with the correct username and password.
-4. A successful login will redirect to the page where viewing notes & tasks, creating notes & tasks, deleting notes & tasks and other features can be done.
-5. Click on the "log out" button to log out.
+4. A successful login will redirect to the home page where the user can view their notes.
+5. To create a note, enter the title of the Note and click "Add Note". The note will then be seen on the home page.
+6. The user is able to customize the note by changing the color by clicking "Change Note Color" after entering the note ID and selecting their desire color.
+7. To add tasks to the note, click on the title and/or id of the note, which will redirect to the task creation page.
+8. On the task creation page, there is an option to enter a task and by clicking "Add Task", the task is added to the note.
+9. After adding a task, the task will show up on the left-side and the user will be given the option to copy the task. 
+10. To delete tasks, simply click on "Delete Task", this will clear all tasks then redirect the user back to the home page.
+11. The user can also copy the note, delete the note, and invite other users to access the note. 
+12. The user can clear their own home page by clicking "Clear Notes", which deletes all of the user's notes.
+13. Click on the "log out" button to log out.
 
 
 ## Implemented Use Cases
