@@ -39,10 +39,10 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 ![Register](https://i.postimg.cc/MptFcsVr/Screen-Shot-2021-05-07-at-4-34-02-PM.png)
 
 **View Notes page:**
-![View Notes](https://i.postimg.cc/SNfZ5ZTN/Screen-Shot-2021-05-07-at-4-34-19-PM.png)
+![View Notes](https://i.postimg.cc/PqYC2j6z/Screen-Shot-2021-05-19-at-11-09-27-PM.png)
 
 **View Tasks page**
-![View Tasks](https://i.postimg.cc/7ZPBygd1/Screen-Shot-2021-05-07-at-4-34-35-PM.png)
+![View Tasks](https://i.postimg.cc/9F0zsT8f/Screen-Shot-2021-05-19-at-11-09-47-PM.png)
 
 
 ## Technologies Used
