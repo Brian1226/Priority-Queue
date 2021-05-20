@@ -77,16 +77,15 @@ def register():
 @login_required
 def create_note():
     noteForm = NoteForm()
-    user = current_user
     if noteForm.validate_on_submit():
         if len(noteForm.content.data) > 0:
-            user = User.query.filter_by(username=username).first()
             note = Note(
-                userID=current_user.id, time=timestamp.datetime
+                author = current_user, body = noteForm.content.data, color = 'White'
             )
-            db.create_all
             db.session.add(note)
             db.session.commit()
+            flash('Note created')
+            return redirect(url_for('view_note'))
     return render_template('note.html', title='Notes', noteForm = noteForm)
 
 @myapp_obj.route('/notes', methods=['GET', 'POST'])
@@ -118,14 +117,26 @@ def view_note():
     return render_template('notes.html', title='Notes', usernotes=final, colorForm=colorForm, color=color)
 
 
-@myapp_obj.route('/delete', methods=['POST'])
+@myapp_obj.route('/delete/<int:id>', methods=['GET', 'POST'])
 @login_required
 def delete_note(id):
-    print(id)
-    delNote = Note.query.filter_by(id=id).first()
-    db.create_all
-    db.session.delete(delNote)
+    delNote = Note.query.filter_by(id=id).first() 
+    taskQ = Task.query.filter(Task.note_id == id).all() 
+    for n in taskQ: 
+        db.session.delete(n)
+    db.session.delete(delNote) 
     db.session.commit()
+    return redirect(url_for('view_note'))
+
+@myapp_obj.route('/clearnotes', methods=['GET', 'POST'])
+@login_required
+def clear_notes():
+    notes = Note.query.all() 
+    for n in notes:
+        if current_user.id == n.user_id: 
+            db.session.delete(n)
+            db.session.commit()
+    return redirect(url_for('view_note'))
     
 @myapp_obj.route('/task', methods=['GET', 'POST'])
 @login_required
