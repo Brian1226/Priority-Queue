@@ -26,7 +26,7 @@ class ChangeNoteColor(FlaskForm):
     submit = SubmitField("Change Note Color")
 
 class createNote(FlaskForm):
-    body = StringField("Note", validators = [DataRequired()])
+    body = StringField("Note title:", validators = [DataRequired()])
     submit = SubmitField("Add Note")
 
 class inviteCollaborator(FlaskForm):
