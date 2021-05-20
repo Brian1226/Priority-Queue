@@ -4,7 +4,7 @@
 <style>
     h1 {
         text-align: center;
-        font-size: 90px;
+        font-size: 85px;
         color: white;
     }
 
@@ -19,7 +19,7 @@
         position: absolute;
     }
 
-    .button {
+    .logout {
         background-color: lightgray;
         color: black;
         font-size: 18px;
@@ -27,12 +27,16 @@
         border: solid black;
     }
 
+    .button {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+
 </style>
 
-<h1>Edit Task</h1>
+<h1>Create Your Own Tasks!</h1>
 <div>
-    <h2>Delete Task</h2>
-    <p><a href="{{ url_for('deletetask', id=id) }}" class="button">Delete Task</a></p>
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
@@ -41,20 +45,19 @@
         </p>
         <p> {{ form.submit() }} </p>
     </form>
+    <p><button><a href="{{ url_for('deletetask', id=id) }}" class="deletetask">Delete Task</a></button></p>
 </div>
 
 
+<p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
 
-<!-- Adding this here to test the logout function. Should be removed or moved elsewhere later -->
-<p><a href="{{ url_for('logout') }}" class="button">Log Out</a></p>
+<p><a href="{{ url_for('view_note') }}" class="logout">Back to Notes</a></p>
 
-<p><a href="{{ url_for('view_note') }}" class="button">Back to Notes</a></p>
-
-<p><a href="{{ url_for('clear_tasks', id=id) }}" class="button">Clear All Tasks</a></p>
+<p><a href="{{ url_for('clear_tasks', id=id) }}" class="logout">Clear All Tasks</a></p>
 
 {% for task in tasks %}
    <p> {{ task.content }}</p>
-   <p><a href="{{ url_for('copy_tasks', id=id) }}" >Copy Task</a></p>
+   <p><button><a href="{{ url_for('copy_tasks', id=id) }}" >Copy Task</a></button></p>
 
 {% endfor %}
 
