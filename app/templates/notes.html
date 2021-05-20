@@ -49,23 +49,29 @@
   .Pink {
     background-color: pink;
   }
+
+  .Black{
+    background-color: black;
+  }
 </style>
 
 <h1>
-  Home
+  PLACEHOLDER FOR NOTES
 </h1>
 
 <p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
 
-<div class="buttons">
-  <div class="action_btn">
-    <button><a href="{{ url_for('create_note') }}" class="create_note">Create Note</a></button>
-    <button name="submit" class="action_btn delete" type="submit" value="Delete" onclick="delete_note()">Delete
-      Note</button>
+<form action="" method="post" novalidate>
+  {{ form.hidden_tag() }}
 
-    <p id="saved"></p>
-  </div>
-</div>
+  <p>
+    {{ form.body(size=100) }}
+  </p>
+
+  <p>
+    {{ form.submit }}
+  </p>
+</form>
 
 
 <form action="" method="post" novalidate>
@@ -79,7 +85,7 @@
   {{ colorForm.submit }}
 </form>
 
-<p class={{color}}> DSFDSFdsf</p>
+<p><a href="{{ url_for('clear_notes') }}" >Clear Notes</a></p>
 
 
 {% if not usernotes %}
@@ -87,15 +93,20 @@
 {% else %}
 
   {% for note in usernotes %}
-  {% if note.user_id == current_user.id %}   
+  {% if note.user_id == current_user.id or note.share%}   <!-- If the user of the note is the current user or if the note was shared with them, they can see the note -->
   <div class = {{note.color}}> 
-     <p> {{ note.id }} : {{ note.body }}</p>
+     <p> <a href="/viewtask/{{ note.id }}">{{ note.id }} : {{ note.body }}</a> </p>
      <p> {{ note.timestamp }} </p>
+     <p> <a href="/delete/{{ note.id }}">Delete</a> </p>
+     <p> <a href="/invite/{{ note.id }}">Invite</a> </p>
+     <p> <a href="/copy/{{ note.id }}">Copy</a> </p>
   </div>
   {% endif %}
   {% endfor %}
 
 {% endif %}
+
+
 
 
 {% endblock %}

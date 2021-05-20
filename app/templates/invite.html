@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{%block content%}
+
+<form action="" method="post" novalidate>
+    {{ invite.hidden_tag() }}
+  
+    {{ invite.collaborator.label }}
+    {{ invite.collaborator(size=30) }}
+  
+    {{ invite.submit }}
+  </form>
+
+  {%endblock%}

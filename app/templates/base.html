@@ -9,18 +9,18 @@
 </head>
 
 <body style="background-image: url(https://wallpaperaccess.com/full/3124663.jpg)" ;>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul style="background-color: coral;">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
     {% block content %}
     {% endblock %}
 </body>
 
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-<ul style="background-color: coral;">
-    {% for message in messages %}
-    <li>{{ message }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
 {% endwith %}
 
 </html>

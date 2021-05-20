@@ -13,10 +13,6 @@ class registerForm(FlaskForm):
     password = PasswordField("Password", validators = [DataRequired()])
     submit = SubmitField("Sign Up")
     
-class NoteForm(FlaskForm):
-    content = StringField("Create Note", validators = [DataRequired()])
-    submit = SubmitField("Create Note")
-    
 class TaskForm(FlaskForm):
     content = StringField("Create Task", validators = [DataRequired()])
     submit = SubmitField("Add Task")
@@ -24,7 +20,14 @@ class TaskForm(FlaskForm):
 class ChangeNoteColor(FlaskForm):
     noteColor = SelectField(
         u'Note color',
-        choices = [('White', 'white'), ('Gray', 'gray'), ('Orange', 'orange'), ('Pink', 'pink')] )
-    submit = SubmitField("Change Note Color")
+        choices = [('White', 'white'), ('Gray', 'gray'), ('Orange', 'orange'), ('Pink', 'pink'), ('Black', 'black')] )
     noteID = StringField("Note id:", validators = [DataRequired()])
+    submit = SubmitField("Change Note Color")
 
+class createNote(FlaskForm):
+    body = StringField("Note", validators = [DataRequired()])
+    submit = SubmitField("Add Note")
+
+class inviteCollaborator(FlaskForm):
+    collaborator = StringField("Email of who you want to share note with", validators = [DataRequired()])
+    submit = SubmitField("Share")

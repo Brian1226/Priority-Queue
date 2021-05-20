@@ -13,6 +13,7 @@ class User(UserMixin, db.Model):
     notes = db.relationship('Note', backref='author', lazy='dynamic')
     tasks = db.relationship('Task', backref='author', lazy='dynamic')
 
+
     def set_password(self, password):
         self.password = generate_password_hash(password)
 
@@ -26,9 +27,12 @@ class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(256))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    color = db.Column(db.String, nullable = True)
+    color = db.Column(db.String)
 
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+    tasks = db.relationship('Task', backref='body', lazy='dynamic')
+    collaborator = db.relationship('collaborators', backref = 'body', lazy = 'dynamic')
 
     def __repr__(self):
         return '<Notes {}>'.format(self.body)
@@ -38,6 +42,8 @@ class Task(db.Model):
     content = db.Column(db.String(300))
 
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    note_id = db.Column(db.Integer, db.ForeignKey('note.id'))
+
 
     def __repr__(self):
         return 'Task {}>'.format(self.content)
@@ -45,3 +51,8 @@ class Task(db.Model):
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+class collaborators(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String)
+    note_id = db.Column(db.Integer, db.ForeignKey('note.id'))
