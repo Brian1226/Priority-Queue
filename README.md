@@ -19,19 +19,25 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 5. Click on the "log out" button to log out.
 
 
-## Implemented Use Cases (WORK IN PROGRESS)
+## Implemented Use Cases
 1. **Sign In:** After filling out the login form with the valid username and password, clicking the "Sign in" button will redirect to the task page.
 2. **Sign Up:** After filling out the register page with the valid email, username, and password, click the "Sign up" button will redirect to the login page.
 3. **Log out:** Clicking the "log out" button will sign out and redirect back to the login page.
 4. **View Note:** Displays all the created notes, otherwise prints the message "There's no notes to delete!"
-5. **Delete Note:** Clicking on the "Delete Note" button will delete the selected note.
-6. **View Task:** Displays all the created tasks, otherwise prints the message "There's no tasks to delete!"
-7. **Delete Task:** Clicking the "Delete Task" button will first direct user to confirm the delete action, and upon confirmation, deletes the respective task.
+5. **Add Note:** After filling out the "Note title", click "Add Note" to create the note.
+6. **Invite:** After creating the note, clicking on "Invite" will share the note to the collaborator (enter their email).
+7. **Delete Note:** Clicking on "Delete Note" will delete the selected note.
+8. **Copy Note:** Clicking on "Copy Note" will create a duplicate of the selected note.
+9. **Change Note Color:** Enter the id of the note you want to change color, select the desired color, then click on "Change Note Color."
+10. **Clear Notes:** Clicking on "Clear Notes" will delete all notes.
+11. **View Task:** After clicking on the title of the selected note, it displays all the created tasks for that note.
+12. **Add Task:** After typing a task, click on "Add Task" to add the task to the respective note.
+13. **Delete Task:** Clicking on "Delete Task" will delete the selected task from the note.
+14. **Copy Task:** Clicking on "Copy Task" will create a duplicate of the selected task.
+15. **Clear All Tasks:** Clicking on "Clear All Tasks" will delete all tasks within the respective note.
 
-**Other features to be added later: Create New Note, Create New Task, Make Copy, Change Note Color...**
 
-
-## Image (WORK IN PROGRESS)
+## Image
 **Login page:**
 ![Login](https://i.postimg.cc/X7ShtBnx/Screen-Shot-2021-05-07-at-4-33-53-PM.png)
 
@@ -54,8 +60,4 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 
 ## Acknowledgements / References
 * Professor Rojas's lectures and slides
-
-
-
-
-
+* https://www.w3schools.com/html/default.asp
