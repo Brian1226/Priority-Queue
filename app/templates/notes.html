@@ -22,14 +22,6 @@
     border: solid black;
   }
 
-  .clear_notes {
-    background-color: lightgray;
-    color: black;
-    font-size: 18px;
-    padding: 10px 35px;
-    border: solid black;
-  }
-
   .button {
     width: 200px;
     margin: 0 auto;
@@ -70,10 +62,9 @@
     background-color: plum;
   }
 
-  .LightGreen{
+  .LightGreen {
     background-color: lightgreen;
   }
-
 </style>
 
 <h1>
@@ -87,13 +78,10 @@
   {{ form.hidden_tag() }}
 
   <p style="color:white;">
-    {{ form.body.label }}
-    {{ form.body(size=5) }}
+    {{ colorForm.noteID.label }}
+    {{ colorForm.noteID(size=2) }}
   </p>
 
-  <p>
-    {{ form.submit }}
-  </p>
 </form>
 
 
@@ -101,8 +89,10 @@
   {{ colorForm.hidden_tag() }}
 
   <p style="color:white;">
-  {{ colorForm.noteID.label }}
-  {{ colorForm.noteID(size=2) }}
+    {{ form.body.label }}
+    {{ form.body(size=5) }}
+
+    {{ form.submit }}
   </p>
 
   {{ colorForm.noteColor }}
@@ -110,24 +100,27 @@
   {{ colorForm.submit }}
 </form>
 
-<p><button><a href="{{ url_for('clear_notes') }}" class= "clear_notes" >Clear Notes</a></button></p>
+<p><a href="{{ url_for('clear_notes') }}">Clear Notes</a></p>
 
 
 {% if not usernotes %}
-  <div> There are no notes to delete! </div>
+<div> There are no notes to delete! </div>
 {% else %}
 
-  {% for note in usernotes %}
-  {% if note.user_id == current_user.id or note.share%}   <!-- If the user of the note is the current user or if the note was shared with them, they can see the note -->
-  <div class = {{note.color}}> 
-     <p> <a href="/viewtask/{{ note.id }}">{{ note.id }} : {{ note.body }}</a> </p>
-     <p> <div2> {{ note.timestamp }} </div2> </p>
-     <p> <a href="/delete/{{ note.id }}">Delete</a> </p>
-     <p> <a href="/invite/{{ note.id }}">Invite</a> </p>
-     <p> <a href="/copy/{{ note.id }}">Copy</a> </p>
-  </div>
-  {% endif %}
-  {% endfor %}
+{% for note in usernotes %}
+{% if note.user_id == current_user.id or note.share%}
+<!-- If the user of the note is the current user or if the note was shared with them, they can see the note -->
+<div class={{note.color}}>
+  <p> <a href="/viewtask/{{ note.id }}">{{ note.id }} : {{ note.body }}</a> </p>
+  <p>
+    <div2> {{ note.timestamp }} </div2>
+  </p>
+  <p> <a href="/delete/{{ note.id }}">Delete</a> </p>
+  <p> <a href="/invite/{{ note.id }}">Invite</a> </p>
+  <p> <a href="/copy/{{ note.id }}">Copy</a> </p>
+</div>
+{% endif %}
+{% endfor %}
 
 {% endif %}
 
