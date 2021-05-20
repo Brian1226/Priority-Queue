@@ -7,19 +7,23 @@
   }
 
   div {
-    color: white
+    color: white;
   }
 
-  .btn {
+  div2 {
+    color: black;
+  }
+
+  .logout {
     background-color: lightgray;
     color: black;
     font-size: 18px;
-    padding: 10px 35px;
+    padding: 15px 35px;
     border: solid black;
   }
 
 
-  .buttons {
+  .button {
     width: 200px;
     margin: 0 auto;
     display: inline;
@@ -38,34 +42,48 @@
     background-color: white;
   }
 
-  .Gray {
-    background-color: gray;
+  .LightGray {
+    background-color: lightgray;
   }
 
-  .Orange {
-    background-color: orange;
+  .CoffeeBrown {
+    background-color: burlywood;
   }
 
   .Pink {
     background-color: pink;
   }
 
-  .Black{
-    background-color: black;
+  .Skyblue {
+    background-color: skyblue;
   }
+
+  .Coral {
+    background-color: coral;
+  }
+
+  .Plum {
+    background-color: plum;
+  }
+
+  .LightGreen{
+    background-color: lightgreen;
+  }
+  
 </style>
 
 <h1>
-  PLACEHOLDER FOR NOTES
+  Home
 </h1>
 
-<p><a href="{{ url_for('logout') }}" class="btn">Log Out</a></p>
+<p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
+
 
 <form action="" method="post" novalidate>
   {{ form.hidden_tag() }}
 
   <p>
-    {{ form.body(size=100) }}
+    {{ form.body(size=5) }}
   </p>
 
   <p>
@@ -85,7 +103,7 @@
   {{ colorForm.submit }}
 </form>
 
-<p><a href="{{ url_for('clear_notes') }}" class="btn">Clear Notes</a></p>
+<p><a href="{{ url_for('clear_notes') }}" class= "clear_notes" >Clear Notes</a></p>
 
 
 {% if not usernotes %}
@@ -96,7 +114,7 @@
   {% if note.user_id == current_user.id or note.share%}   <!-- If the user of the note is the current user or if the note was shared with them, they can see the note -->
   <div class = {{note.color}}> 
      <p> <a href="/viewtask/{{ note.id }}">{{ note.id }} : {{ note.body }}</a> </p>
-     <p> {{ note.timestamp }} </p>
+     <p> <div2> {{ note.timestamp }} </div2> </p>
      <p> <a href="/delete/{{ note.id }}">Delete</a> </p>
      <p> <a href="/invite/{{ note.id }}">Invite</a> </p>
      <p> <a href="/copy/{{ note.id }}">Copy</a> </p>
