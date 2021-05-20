@@ -86,7 +86,7 @@
 <form action="" method="post" novalidate>
   {{ form.hidden_tag() }}
 
-  <p>
+  <p style="color:white;">
     {{ form.body.label }}
     {{ form.body(size=5) }}
   </p>
@@ -100,8 +100,10 @@
 <form action="" method="post" novalidate>
   {{ colorForm.hidden_tag() }}
 
+  <p style="color:white;">
   {{ colorForm.noteID.label }}
   {{ colorForm.noteID(size=2) }}
+  </p>
 
   {{ colorForm.noteColor }}
 
