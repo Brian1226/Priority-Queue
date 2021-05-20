@@ -78,10 +78,11 @@
   {{ form.hidden_tag() }}
 
   <p style="color:white;">
-    {{ colorForm.noteID.label }}
-    {{ colorForm.noteID(size=2) }}
-  </p>
+    {{ form.body.label }}
+    {{ form.body(size=5) }}
 
+    {{ form.submit }}
+  </p>
 </form>
 
 
@@ -89,18 +90,17 @@
   {{ colorForm.hidden_tag() }}
 
   <p style="color:white;">
-    {{ form.body.label }}
-    {{ form.body(size=5) }}
+    {{ colorForm.noteID.label }}
+    {{ colorForm.noteID(size=2) }}
 
-    {{ form.submit }}
+    {{ colorForm.noteColor }}
+
+    {{ colorForm.submit }}
   </p>
 
-  {{ colorForm.noteColor }}
-
-  {{ colorForm.submit }}
 </form>
 
-<p><a href="{{ url_for('clear_notes') }}">Clear Notes</a></p>
+<p><button><a href="{{ url_for('clear_notes') }}" class="clear_notes">Clear Notes</a></button></p>
 
 
 {% if not usernotes %}
