@@ -20,7 +20,8 @@ class TaskForm(FlaskForm):
 class ChangeNoteColor(FlaskForm):
     noteColor = SelectField(
         u'Note color',
-        choices = [('White', 'white'), ('Gray', 'gray'), ('Orange', 'orange'), ('Pink', 'pink'), ('Black', 'black')] )
+        choices = [('White', 'white'), ('LightGray', 'lightgray'), ('CoffeeBrown', 'burlywood'), ('Pink', 'pink'), ('Skyblue', 'skyblue'), 
+                   ('Coral', 'coral'), ('Plum', 'plum'), ('LightGreen', 'lightgreen')] )
     noteID = StringField("Note id:", validators = [DataRequired()])
     submit = SubmitField("Change Note Color")
 
