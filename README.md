@@ -35,6 +35,7 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 13. **Delete Task:** Clicking on "Delete Task" will delete the selected task from the note.
 14. **Copy Task:** Clicking on "Copy Task" will create a duplicate of the selected task.
 15. **Clear All Tasks:** Clicking on "Clear All Tasks" will delete all tasks within the respective note.
+16. **Back to Notes:** Clicking on "Back to Notes" will redirect from task page to the notes page (Home).
 
 
 ## Image
@@ -48,7 +49,7 @@ The to-do app Priority Queue allows users to collaborate on organizing and prior
 ![View Notes](https://i.postimg.cc/PqYC2j6z/Screen-Shot-2021-05-19-at-11-09-27-PM.png)
 
 **View Tasks page**
-![View Tasks](https://i.postimg.cc/9F0zsT8f/Screen-Shot-2021-05-19-at-11-09-47-PM.png)
+![View Tasks](https://i.postimg.cc/6qMJz32P/Screen-Shot-2021-05-19-at-11-28-49-PM.png)
 
 
 ## Technologies Used
