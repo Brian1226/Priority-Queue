@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Home Page - my blog</title>
+    {% endif %}
+</head>
+
+<body style="background-image: url(https://wallpaperaccess.com/full/3124663.jpg)" ;>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul style="background-color: coral;">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+    {% block content %}
+    {% endblock %}
+</body>
+
+{% endwith %}
+
+</html>

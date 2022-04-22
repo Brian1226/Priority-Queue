@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  h1 {
+    color: white;
+  }
+
+  div {
+    color: white;
+  }
+
+  div2 {
+    color: black;
+  }
+
+  .logout {
+    background-color: lightgray;
+    color: black;
+    font-size: 18px;
+    padding: 10px 35px;
+    border: solid black;
+  }
+
+  .button {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+
+  .action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+  }
+
+  .White {
+    background-color: white;
+  }
+
+  .LightGray {
+    background-color: lightgray;
+  }
+
+  .CoffeeBrown {
+    background-color: burlywood;
+  }
+
+  .Pink {
+    background-color: pink;
+  }
+
+  .Skyblue {
+    background-color: skyblue;
+  }
+
+  .Coral {
+    background-color: coral;
+  }
+
+  .Plum {
+    background-color: plum;
+  }
+
+  .LightGreen {
+    background-color: lightgreen;
+  }
+</style>
+
+<h1>
+  Home
+</h1>
+
+<p><a href="{{ url_for('logout') }}" class="logout">Log Out</a></p>
+
+
+<form action="" method="post" novalidate>
+  {{ form.hidden_tag() }}
+
+  <p style="color:white;">
+    {{ form.body.label }}
+    {{ form.body(size=5) }}
+
+    {{ form.submit }}
+  </p>
+</form>
+
+
+<form action="" method="post" novalidate>
+  {{ colorForm.hidden_tag() }}
+
+  <p style="color:white;">
+    {{ colorForm.noteID.label }}
+    {{ colorForm.noteID(size=2) }}
+
+    {{ colorForm.noteColor }}
+
+    {{ colorForm.submit }}
+  </p>
+
+</form>
+
+<p><button><a href="{{ url_for('clear_notes') }}" class="clear_notes">Clear Notes</a></button></p>
+
+
+{% if not usernotes %}
+<div> There are no notes to delete! </div>
+{% else %}
+
+{% for note in usernotes %}
+{% if note.user_id == current_user.id or note.share%}
+<!-- If the user of the note is the current user or if the note was shared with them, they can see the note -->
+<div class={{note.color}}>
+  <p> <a href="/viewtask/{{ note.id }}">{{ note.id }} : {{ note.body }}</a> </p>
+  <p>
+    <div2> {{ note.timestamp }} </div2>
+  </p>
+  <p> <a href="/delete/{{ note.id }}">Delete</a> </p>
+  <p> <a href="/invite/{{ note.id }}">Invite</a> </p>
+  <p> <a href="/copy/{{ note.id }}">Copy</a> </p>
+</div>
+{% endif %}
+{% endfor %}
+
+{% endif %}
+
+
+
+
+{% endblock %}
